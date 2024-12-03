@@ -267,6 +267,9 @@ body {
 .businessQuality_finder .searh_form .search-container {
   width: 100%;
 }
+.businessQuality_finder .searh_form .search-container .autocomplete-suggestions {
+  border: 0;
+}
 .businessQuality_finder .searh_form .form-control, .businessQuality_finder .searh_form .form-select {
   border-radius: 4px;
   height: 48px;
@@ -1870,12 +1873,13 @@ section {
     width: 30px;
   }
   .welcome ul {
-    flex-wrap: nowrap;
-    overflow-y: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .welcome ul li {
-    flex: 0 0 160px;
-    max-width: 160px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 15px;
   }
   .welcome ul li img {
     width: 70px;
