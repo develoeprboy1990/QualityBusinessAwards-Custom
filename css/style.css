@@ -264,6 +264,9 @@ body {
   gap: 1rem;
   align-items: center;
 }
+.businessQuality_finder .searh_form .search-container {
+  width: 100%;
+}
 .businessQuality_finder .searh_form .form-control, .businessQuality_finder .searh_form .form-select {
   border-radius: 4px;
   height: 48px;
