@@ -1415,6 +1415,31 @@ section{
         }
     }
 }
+.google_news{
+    background-color: $yellow;
+    font-family: $lato;
+    color: #fff;
+    h2{
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 43px;
+    }
+    p{
+        line-height: 28px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .google_searach_img{
+        min-height: 475px;
+         border-radius: 15px;
+        background-size: cover;
+        background-position: top center;
+        transition: ease-in-out 7s !important;
+        &:hover{
+            background-position: center bottom !important;
+        }
+    }
+}
 /*-----SEARCH PAGE--------*/
 .on_banner_search{
     margin-top: -90px;

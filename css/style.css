@@ -1354,6 +1354,32 @@ section {
   margin-top: 5px;
 }
 
+.google_news {
+  background-color: #ffa801;
+  font-family: "lato", sans-serif;
+  color: #fff;
+}
+.google_news h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 43px;
+}
+.google_news p {
+  line-height: 28px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.google_news .google_searach_img {
+  min-height: 475px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: top center;
+  transition: ease-in-out 7s !important;
+}
+.google_news .google_searach_img:hover {
+  background-position: center bottom !important;
+}
+
 /*-----SEARCH PAGE--------*/
 .on_banner_search {
   margin-top: -90px;
