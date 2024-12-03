@@ -44,257 +44,22 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo htmlspecialchars($award['business_name']); ?> - Quality Business Awards</title>
+    <title>Quality Business Award</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .award-container {
-            max-width: 1200px;
-            margin: 20px auto;
-            border: 2px solid #FFB800;
-            border-radius: 15px;
-            padding: 40px;
-            position: relative;
-            font-family: Arial, sans-serif;
-        }
-
-        .top-banner {
-            background-color: #1e54a9;
-            color: white;
-            padding: 10px 40px;
-            border-radius: 25px;
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-weight: bold;
-            font-size: 1.2em;
-            white-space: nowrap;
-        }
-
-        .content-wrapper {
-            display: grid;
-            grid-template-columns: auto 1fr auto;
-            gap: 40px;
-            align-items: start;
-        }
-
-        .award-image {
-            width: 180px;
-            height: auto;
-            padding-top: 35px;
-        }
-
-        .business-info {
-            padding-top: 0;
-        }
-
-        .business-name {
-            color: #FFB800;
-            font-weight: 600;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .category-section {
-            background: #f8f9fa;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .category-details {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .detail-row {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .detail-icon {
-            width: 24px;
-            height: 24px;
-            fill: #FFB800;
-        }
-
-        .category-text, .location-text {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: #2c3338;
-        }
-
-        .description {
-            line-height: 1.5;
-            max-width: 600px;
-            color: #555;
-            margin-top: 2rem;
-            font-size: 1.1rem;
-        }
-
-        .right-section {
-            display: flex;
-            gap: 30px;
-            align-items: start;
-        }
-
-        .ratings-section {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 45px;
-        }
-
-        .rating-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            height: 24px;
-        }
-
-        .stars {
-            color: #FFB800;
-            letter-spacing: 2px;
-        }
-
-        .rating-label {
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-
-        .buttons-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 75px;
-        }
-
-        .visit-button, .verify-button {
-            padding: 12px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            text-align: center;
-            white-space: nowrap;
-        }
-
-        .visit-button {
-            background-color: #FFB800;
-            color: white;
-        }
-
-        .verify-button {
-            background-color: #f0f5ff;
-            color: #1e54a9;
-            border: 1px solid #1e54a9;
-            font-size: 0.9em;
-        }
-
-        .verify-button:hover {
-            background-color: #e6eeff;
-        }
-
-        @media (max-width: 768px) {
-            .award-container {
-                padding: 30px 20px;
-                margin: 30px 10px;
-            }
-
-            .content-wrapper {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .award-image {
-                width: 140px;
-                padding-top: 20px;
-                margin: 0 auto;
-            }
-
-            .business-name {
-                text-align: center;
-            }
-
-            .category-section {
-                text-align: center;
-            }
-
-            .detail-row {
-                justify-content: center;
-            }
-
-            .description {
-                text-align: center;
-                font-size: 0.9em;
-            }
-
-            .right-section {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            }
-
-            .ratings-section {
-                margin-top: 20px;
-                width: 100%;
-            }
-
-            .rating-item {
-                justify-content: center;
-            }
-
-            .buttons-container {
-                margin-top: 20px;
-                width: 100%;
-            }
-
-            .top-banner {
-                font-size: 1em;
-                padding: 8px 20px;
-            }
-
-            .category-text, .location-text {
-                font-size: 1.4rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .award-container {
-                padding: 20px 15px;
-            }
-
-            .business-name {
-                font-size: 1.3em;
-            }
-
-            .category-text, .location-text {
-                font-size: 1.2rem;
-            }
-
-            .rating-label {
-                font-size: 1em;
-            }
-
-            .top-banner {
-                font-size: 0.9em;
-                padding: 6px 15px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://adriand138.sg-host.com/css/style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container col-md-9">
-            <a class="navbar-brand" href="https://adriand138.sg-host.com/"><img src="images/logo-tran.png" alt=""></a>
+            <a class="navbar-brand" href="https://adriand138.sg-host.com/"><img src="https://adriand138.sg-host.com/images/logo-tran.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -304,26 +69,26 @@ try {
                         <a class="nav-link" href="https://adriand138.sg-host.com/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About us</a>
+                        <a class="nav-link active" aria-current="page" href="https://adriand138.sg-host.com/about.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="request-consideration.html">Request Consideration</a>
+                        <a class="nav-link" href="https://adriand138.sg-host.com/request-consideration.html">Request Consideration</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        <a class="nav-link" href="https://adriand138.sg-host.com/contact_us.html">Contact Us</a>
                     </li>
                 </ul>
-                <button class="btn ms-auto" type="submit">Search winner</button>
+                <a href="https://adriand138.sg-host.com/search"><button class="btn" type="button">Search winner</button></a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="home_hero gym_lock" style="background-image: url(images/single-header.png);">
+    <div class="home_hero gym_lock" style="background-image: url(https://adriand138.sg-host.com/images/single-header.png);">
         <div class="container">
             <p>Find The Winners of The <span>2024 Quality Business Awards</span></p>
             <h2>QUALITY BUSINESS AWARDS</h2>
-            <a href="search" class="btn">SEARCH WINNERS</a>
+            <a href="https://adriand138.sg-host.com/search" class="btn">SEARCH WINNERS</a>
         </div>
     </div>
 
@@ -333,7 +98,7 @@ try {
             <div class="row">
                 <div class="col-md-6">
                     <div class="pressImg">
-                        <img src="images/Design-1.jpg" alt="" class="img-fluid">
+                        <img src="https://adriand138.sg-host.com/images/Design-1.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -376,7 +141,7 @@ try {
                     <div class="row align-items-center">
                         <div class="col-md-2">
                             <div class="ward_logo">
-                                <img src="images/2022-1.png" alt="" class="img-fluid">
+                                <img src="https://adriand138.sg-host.com/images/2022-1.png" alt="" class="img-fluid">
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -397,10 +162,10 @@ try {
                         </div>
                         <div class="col-md-4">
                             <ul class="list-unstyled rating">
-                                <li><img src="images/stars.png" alt=""> <span>Satisfaction</span></li>
-                                <li><img src="images/stars.png" alt=""> <span>Service</span></li>
-                                <li><img src="images/stars.png" alt=""> <span>Reputation</span></li>
-                                <li><img src="images/stars.png" alt=""> <span>Quality</span></li>
+                                <li><img src="https://adriand138.sg-host.com/images/stars.png" alt=""> <span>Satisfaction</span></li>
+                                <li><img src="https://adriand138.sg-host.com/images/stars.png" alt=""> <span>Service</span></li>
+                                <li><img src="https://adriand138.sg-host.com/images/stars.png" alt=""> <span>Reputation</span></li>
+                                <li><img src="https://adriand138.sg-host.com/images/stars.png" alt=""> <span>Quality</span></li>
                             </ul>
                         </div>
                         <div class="col-md-2">
@@ -422,10 +187,10 @@ try {
         <div class="container col-md-9">
             <div class="top_area">
                 <div class="row align-items-center">
-                    <div class="col-md-2"><img src="images/qba-award-1024x938.png" alt="" class="img-fluid"></div>
+                    <div class="col-md-2"><img src="https://adriand138.sg-host.com/images/qba-award-1024x938.png" alt="" class="img-fluid"></div>
                     <div class="col-md-5">
                         <div class="email">
-                            <span><img src="images/email-icon.png" alt=""></span>
+                            <span><img src="https://adriand138.sg-host.com/images/email-icon.png" alt=""></span>
                             <h3>Email : <small>support@qualitybusinessawards.ca</small></h3>
                         </div>
                     </div>
@@ -441,8 +206,8 @@ try {
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>
 
