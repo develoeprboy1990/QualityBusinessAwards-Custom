@@ -26,11 +26,11 @@ try {
 ?>
 <?php require('includes/header.php'); ?>
 <!-- Hero Section -->
-<div class="home_hero gym_lock" style="background-image: url(https://adriand138.sg-host.com/images/single-header.png);">
+<div class="home_hero gym_lock" style="background-image: url(/images/single-header.png);">
     <div class="container">
         <p>Find The Winners of The <span>2024 Quality Business Awards</span></p>
         <h2>QUALITY BUSINESS AWARDS</h2>
-        <a href="https://adriand138.sg-host.com/search" class="btn">SEARCH WINNERS</a>
+        <a href="/search" class="btn">SEARCH WINNERS</a>
     </div>
 </div>
 
@@ -40,7 +40,7 @@ try {
         <div class="row">
             <div class="col-md-6">
                 <div class="pressImg">
-                    <img src="https://adriand138.sg-host.com/images/Design-1.jpg" alt="" class="img-fluid">
+                    <img src="/images/Design-1.jpg" alt="" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-6">
@@ -83,7 +83,7 @@ try {
                 <div class="row align-items-center">
                     <div class="col-md-2">
                         <div class="ward_logo">
-                            <img src="https://adriand138.sg-host.com/images/2022-1.png" alt="" class="img-fluid">
+                            <img src="/images/2022-1.png" alt="" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -104,10 +104,10 @@ try {
                     </div>
                     <div class="col-md-4">
                         <ul class="list-unstyled rating">
-                            <li><img src="https://adriand138.sg-host.com/images/stars.png" alt=""> <span>Satisfaction</span></li>
-                            <li><img src="https://adriand138.sg-host.com/images/stars.png" alt=""> <span>Service</span></li>
-                            <li><img src="https://adriand138.sg-host.com/images/stars.png" alt=""> <span>Reputation</span></li>
-                            <li><img src="https://adriand138.sg-host.com/images/stars.png" alt=""> <span>Quality</span></li>
+                            <li><img src="/images/stars.png" alt=""> <span>Satisfaction</span></li>
+                            <li><img src="/images/stars.png" alt=""> <span>Service</span></li>
+                            <li><img src="/images/stars.png" alt=""> <span>Reputation</span></li>
+                            <li><img src="/images/stars.png" alt=""> <span>Quality</span></li>
                         </ul>
                     </div>
                     <div class="col-md-2">
