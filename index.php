@@ -193,7 +193,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
         </div>
       </div>
 
-      <div class="bg">
+    <div class="bg">
         <div class="container">
           <!-- Location blocks -->
           <div class="location_block">
@@ -209,12 +209,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
             </div>
           </div>
 
-          <!-- Repeat other location blocks as in your original file -->
-          
-        </div>
-      </div>
+          <div class="location_block">
+            <div class="heading">
+              <h2>Saskatchewan</h2>
+            </div><!--end of heading-->
+            <div class="inner_cities_area">
+            <ul class="list-unstyled">
+              <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+              </svg> Regina</a></li>
 
-      <div class="footer">
+              <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+              </svg> Saskatoon</a></li>
+        
+            </ul>
+            <div class="more_cities">
+              <a href="#" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
+            </div><!--end of more cities-->
+          </div><!--END OF INNER CITIES AREA-->
+          </div>         
+        </div>
+    </div>
+
+    <div class="footer">
         <div class="container col-md-9">
             <div class="top_area">
               <div class="row align-items-center">
@@ -235,69 +253,68 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
         </div><!--end of copy right-->
       </div><!--END OF FOOTER-->
 
-    <script>
-        $(document).ready(function() {
-            $('#search_business').on('input', function() {
-                let term = $(this).val();
-                if (term.length > 1) {
-                    $.ajax({
-                        url: 'autocomplete.php',
-                        method: 'GET',
-                        data: { term: term },
-                        success: function(data) {
-                            console.log("Autocomplete data:", data);
-                            let suggestions = JSON.parse(data);
-                            let suggestionBox = $('#business_suggestions');
-                            suggestionBox.empty();
-                            suggestions.forEach(function(item) {
-                                suggestionBox.append('<div class="autocomplete-suggestion">' + item + '</div>');
-                            });
-                        }
-                    });
-                } else {
-                    $('#business_suggestions').empty();
-                }
-            });
-
-            $('#search_city').on('input', function() {
-                let term = $(this).val();
-                if (term.length > 1) {
-                    $.ajax({
-                        url: 'autocomplete.php',
-                        method: 'GET',
-                        data: { term: term, type: 'city' },
-                        success: function(data) {
-                            let suggestions = JSON.parse(data);
-                            let suggestionBox = $('#city_suggestions');
-                            suggestionBox.empty();
-                            suggestions.forEach(function(item) {
-                                suggestionBox.append('<div class="autocomplete-suggestion">' + item + '</div>');
-                            });
-                        }
-                    });
-                } else {
-                    $('#city_suggestions').empty();
-                }
-            });
-
-            // Handle click on suggestions
-            $(document).on('click', '.autocomplete-suggestion', function() {
-                let input = $(this).closest('.search-container').find('input');
-                input.val($(this).text());
-                $('.autocomplete-suggestions').empty();
-            });
-
-            // Close suggestions when clicking outside
-            $(document).click(function(event) {
-                if (!$(event.target).closest('.search-container').length) {
-                    $('.autocomplete-suggestions').empty();
-                }
-            });
-        });
-    </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function() {
+        $('#search_business').on('input', function() {
+            let term = $(this).val();
+            if (term.length > 1) {
+                $.ajax({
+                    url: 'autocomplete.php',
+                    method: 'GET',
+                    data: { term: term },
+                    success: function(data) {
+                        console.log("Autocomplete data:", data);
+                        let suggestions = JSON.parse(data);
+                        let suggestionBox = $('#business_suggestions');
+                        suggestionBox.empty();
+                        suggestions.forEach(function(item) {
+                            suggestionBox.append('<div class="autocomplete-suggestion">' + item + '</div>');
+                        });
+                    }
+                });
+            } else {
+                $('#business_suggestions').empty();
+            }
+        });
+
+        $('#search_city').on('input', function() {
+            let term = $(this).val();
+            if (term.length > 1) {
+                $.ajax({
+                    url: 'autocomplete.php',
+                    method: 'GET',
+                    data: { term: term, type: 'city' },
+                    success: function(data) {
+                        let suggestions = JSON.parse(data);
+                        let suggestionBox = $('#city_suggestions');
+                        suggestionBox.empty();
+                        suggestions.forEach(function(item) {
+                            suggestionBox.append('<div class="autocomplete-suggestion">' + item + '</div>');
+                        });
+                    }
+                });
+            } else {
+                $('#city_suggestions').empty();
+            }
+        });
+
+        // Handle click on suggestions
+        $(document).on('click', '.autocomplete-suggestion', function() {
+            let input = $(this).closest('.search-container').find('input');
+            input.val($(this).text());
+            $('.autocomplete-suggestions').empty();
+        });
+
+        // Close suggestions when clicking outside
+        $(document).click(function(event) {
+            if (!$(event.target).closest('.search-container').length) {
+                $('.autocomplete-suggestions').empty();
+            }
+        });
+    });
+</script>
 </body>
 </html>
