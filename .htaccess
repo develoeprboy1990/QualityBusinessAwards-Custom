@@ -5,11 +5,47 @@ RewriteBase /
 RewriteCond %{REQUEST_URI} ^/autocomplete\.php$ [NC]
 RewriteRule ^ - [L]
 
+# Handle the about-us page
+RewriteRule ^about-us/?$ about-us.php [L,QSA]
+
+# Handle the request-consideration page
+RewriteRule ^request-consideration/?$ request-consideration.php [L,QSA]
+
+# Handle the contact-us page
+RewriteRule ^contact-us/?$ contact-us.php [L,QSA]
+
 # Handle the search page
 RewriteRule ^search/?$ search.php [L,QSA]
 
 # Handle the main search page
 RewriteRule ^canada/?$ canada.php [L,QSA]
+
+# Handle the commemorate page
+RewriteRule ^commemorate/?$ commemorate.php [L,QSA]
+
+# Handle the banner-badge-certificate page
+RewriteRule ^banner-badge-certificate/?$ banner-badge-certificate.php [L,QSA]
+
+# Handle the window-decals page
+RewriteRule ^window-decals/?$ window-decals.php [L,QSA]
+
+# Handle the plaque page
+RewriteRule ^plaque/?$ plaque.php [L,QSA]
+
+# Handle the glass-trophy page
+RewriteRule ^glass-trophy/?$ glass-trophy.php [L,QSA]
+
+# Handle the press-release page
+RewriteRule ^press-release/?$ press-release.php [L,QSA]
+
+# Handle the find-your-business page
+RewriteRule ^find-your-business/?$ find-your-business.php [L,QSA]
+
+# Handle the find-your-business page
+RewriteRule ^find-your-business-result/?$ find-your-business-result.php [L,QSA]
+
+# Handle the payment-step page
+RewriteRule ^payment-step/?$ payment-step.php [L,QSA]
 
 # Handle award pages with year format
 RewriteCond %{REQUEST_FILENAME} !-f
