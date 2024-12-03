@@ -268,6 +268,7 @@ function get_pagination_url($page) {
                         <input type="text" class="form-control" name="city" id="city" placeholder="Search City" value="<?php echo htmlspecialchars($city); ?>">
                         <div id="city_suggestions" class="autocomplete-suggestions"></div>
                     </div>
+                    
                     <select class="form-select" name="category">
                         <?php foreach ($categories as $cat): ?>
                             <option value="<?php echo htmlspecialchars($cat); ?>" 

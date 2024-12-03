@@ -12,6 +12,19 @@ try {
     $dsn = "pgsql:host={$db_config['host']};port={$db_config['port']};dbname={$db_config['dbname']}";
     $pdo = new PDO($dsn, $db_config['user'], $db_config['password']);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+
+    // Fetch unique categories
+    $category_sql = "SELECT DISTINCT category FROM awards WHERE category IS NOT NULL ORDER BY category ASC";
+    $category_stmt = $pdo->query($category_sql);
+    $categories = $category_stmt->fetchAll(PDO::FETCH_COLUMN);
+
+    // Fetch unique years
+    $year_sql = "SELECT DISTINCT year FROM awards WHERE year IS NOT NULL ORDER BY year DESC";
+    $year_stmt = $pdo->query($year_sql);
+    $years = $year_stmt->fetchAll(PDO::FETCH_COLUMN);
+
+
 } catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage());
 }
@@ -165,24 +178,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
 
                 <div class="businessQuality_finder">
                     <h3>Find The Winners of <span>Quality Business Awards</span> By City ?</h3>
-                    <form class="searh_form" action="index.php" method="GET">
+                    <form class="searh_form" action="search" method="GET">
+                       
                         <div class="search-container">
-                            <input type="text" class="form-control" name="search_city" id="search_city" placeholder="Search City">
+                            <input type="text" class="form-control" name="city" id="city" placeholder="Search City" value="<?php echo htmlspecialchars($city); ?>">
                             <div id="city_suggestions" class="autocomplete-suggestions"></div>
                         </div>
-                        <select class="form-select">
-                            <option value="Select Category" selected>Select Category</option>
+
+                        <select class="form-select"  name="category">
+                            <?php foreach ($categories as $cat): ?>
+                            <option value="<?php echo htmlspecialchars($cat); ?>" 
+                                    <?php echo ($category === $cat) ? 'selected' : ''; ?>>
+                                <?php echo htmlspecialchars($cat); ?>
+                            </option>
+                        <?php endforeach; ?>
                         </select>
-                        <select class="form-select">
-                            <option value="2024" selected>2024</option>
+                        
+                        <select class="form-select" name="year">
+                            <?php foreach ($years as $yr): ?>
+                            <option value="<?php echo htmlspecialchars($yr); ?>" 
+                                    <?php echo ($year == $yr) ? 'selected' : ''; ?>>
+                                <?php echo htmlspecialchars($yr); ?>
+                            </option>
+                        <?php endforeach; ?>
                         </select>
+                        
                         <input type="submit" class="btn" value="SEARCH NOW">
                     </form> 
                     <div class="or"><span>OR</span></div>
 
-                    <form class="searh_form">
+                    <form class="searh_form" action="search" method="GET">
                         <div class="search-container">
-                            <input type="text" class="form-control" placeholder="Search by business name" id="search_business">
+                            <input type="text" class="form-control" name="business_name" id="business_name" placeholder="Search by business name"  value="<?php echo htmlspecialchars($business_name); ?>">
                             <div id="business_suggestions" class="autocomplete-suggestions"></div>
                         </div>
                         <input type="submit" class="btn" value="SEARCH NOW">
@@ -258,57 +285,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <script>
     $(document).ready(function() {
-        $('#search_business').on('input', function() {
-            let term = $(this).val();
-            if (term.length > 1) {
-                $.ajax({
-                    url: 'autocomplete.php',
-                    method: 'GET',
-                    data: { term: term },
-                    success: function(data) {
-                        console.log("Autocomplete data:", data);
-                        let suggestions = JSON.parse(data);
-                        let suggestionBox = $('#business_suggestions');
-                        suggestionBox.empty();
-                        suggestions.forEach(function(item) {
-                            suggestionBox.append('<div class="autocomplete-suggestion">' + item + '</div>');
-                        });
-                    }
-                });
-            } else {
-                $('#business_suggestions').empty();
-            }
-        });
+        function setupAutocomplete(inputId, suggestionBoxId, type) {
+            $('#' + inputId).on('input', function() {
+                let term = $(this).val();
+                if (term.length > 1) {
+                    $.ajax({
+                        url: 'autocomplete.php',
+                        method: 'GET',
+                        data: { 
+                            term: term,
+                            type: type
+                        },
+                        success: function(data) {
+                            let suggestions = JSON.parse(data);
+                            let suggestionBox = $('#' + suggestionBoxId);
+                            suggestionBox.empty();
+                            suggestions.forEach(function(item) {
+                                suggestionBox.append('<div class="autocomplete-suggestion">' + item + '</div>');
+                            });
+                        }
+                    });
+                } else {
+                    $('#' + suggestionBoxId).empty();
+                }
+            });
+        }
 
-        $('#search_city').on('input', function() {
-            let term = $(this).val();
-            if (term.length > 1) {
-                $.ajax({
-                    url: 'autocomplete.php',
-                    method: 'GET',
-                    data: { term: term, type: 'city' },
-                    success: function(data) {
-                        let suggestions = JSON.parse(data);
-                        let suggestionBox = $('#city_suggestions');
-                        suggestionBox.empty();
-                        suggestions.forEach(function(item) {
-                            suggestionBox.append('<div class="autocomplete-suggestion">' + item + '</div>');
-                        });
-                    }
-                });
-            } else {
-                $('#city_suggestions').empty();
-            }
-        });
+        setupAutocomplete('business_name', 'business_suggestions', 'business');
+        setupAutocomplete('city', 'city_suggestions', 'city');
 
-        // Handle click on suggestions
         $(document).on('click', '.autocomplete-suggestion', function() {
             let input = $(this).closest('.search-container').find('input');
             input.val($(this).text());
-            $('.autocomplete-suggestions').empty();
+            $(this).parent().empty();
         });
 
-        // Close suggestions when clicking outside
         $(document).click(function(event) {
             if (!$(event.target).closest('.search-container').length) {
                 $('.autocomplete-suggestions').empty();
