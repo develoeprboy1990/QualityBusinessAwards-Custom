@@ -1899,6 +1899,30 @@ section{
     }
 }
 /*-------------*/
+.titlec1{
+    text-align: center;
+    width: 100%;
+    padding-top: 50px !important;
+    h1{
+        font-size: 3.5rem;
+        color: #E73438;
+    }
+}
+.b_form_home.edit_search{
+    background-color: $yellow;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 800;
+    font-family: "lato", sans-serif;
+    text-decoration: none;
+    padding: 15px 28px;
+    margin: 20px 0px;
+    display: inline-block;
+    &:hover{
+        background-color: #000;
+    }
+}
+/*-------------*/
 .footer{
     background-color: #3A3A3C;
     
