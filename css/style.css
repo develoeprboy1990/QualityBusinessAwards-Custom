@@ -252,7 +252,6 @@ body {
 .businessQuality_finder h3 {
   font-size: 27px;
   font-weight: 600;
-  font-family: "Lato", Sans-serif;
   text-align: center;
   margin-bottom: 35px;
 }
@@ -1889,15 +1888,15 @@ section {
     padding-top: 50px;
   }
   .home_hero p, .home_hero.gym_lock p {
-    font-size: 12px;
+    font-size: 4vw;
   }
   .home_hero h2, .home_hero.gym_lock h2 {
-    font-size: 22px;
+    font-size: 6.5vw;
     margin-bottom: 15px;
   }
   .home_hero .btn, .home_hero.gym_lock .btn {
     border-width: 1px;
-    font-size: 14px;
+    font-size: 3vw;
   }
   .banner_badge_top {
     margin-top: 0;
@@ -1978,6 +1977,7 @@ section {
   }
   .about_us p, .request_consi .title p {
     font-size: 14px;
+    text-align: left;
   }
   .steps .step_img {
     text-align: center !important;
