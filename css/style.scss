@@ -512,6 +512,10 @@ section{
                 font-weight: 400;
             }
         }
+        p{
+            color: #666;
+            font-size: 1.1rem;
+        }
     }
     .inner_jugdes{
         background: #fff;
@@ -526,6 +530,22 @@ section{
             margin: 0 auto 1.5rem;
             border-radius: 50%;
         }
+        .stat-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: rgba(255, 165, 0, 0.1);
+            border-radius: 50%;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                width: 100%;
+                height: 100%;
+                fill: #FFA500;
+            }
+        }
         h4{
             font-size: 2rem;
             font-weight: bold;
@@ -537,7 +557,13 @@ section{
             font-size: 1.2rem;
             font-weight: bold;
             color: #333;
-            margin-bottom: 0.8rem;
+            small{
+                display: block;
+                color: #666;
+                font-size: 0.9rem;
+                line-height: 1.4;
+                margin-top: 0.8rem;
+            }
         }
         &:hover{
             transform: translateY(-5px);
@@ -1085,6 +1111,10 @@ section{
     overflow: hidden;
     height: 15rem;
     position: relative;
+    a{
+        display: block;
+        height: 100%;
+    }
     .mask{
         position: absolute;
         bottom: 0;
@@ -1096,6 +1126,9 @@ section{
             color: #fff;
             font-size: 20px;
             margin-bottom: 0;
+            small{
+                display: block;
+            }
         }
     }
     &.large{
@@ -1169,6 +1202,9 @@ section{
     &.gym{
         .pressImg img{
             object-fit: contain;
+            width: 70%;
+            display: block;
+            margin: 0 auto;
         }
     }
     [class*="col-"]{
@@ -2092,6 +2128,14 @@ section{
             text-align: left;
         }
     }
+    .press_release{
+        margin-top: 0;
+    }
+    .press_release.gym .pressImg img{
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
     .steps{
         .step_img{
             text-align: center !important;
@@ -2169,15 +2213,67 @@ section{
     }
     .awards{
         .awards_block{
-            flex-direction: column;
+            padding: 1vw;
             .award_img{
-                width: 100%;
-                flex: 0 0 100%;
-                text-align: center;
+                padding: 1vw;
+                width: 30%;
+                flex: 0 0 30%;
+                img{
+                    height: auto;
+                }
             }
             .award_desc{
-                width: 100%;
-                flex: 0 0 100%;
+                padding: 1vw;
+                width: 70%;
+                flex: 0 0 70%;
+               h3{
+                font-size: 4vw;
+               }
+               p{
+                font-size: 3vw;
+                margin-bottom: 0;
+               }
+               .bottom_btn{
+                margin-top: 2.5vw;
+                .btn{
+                    margin-right: 2vw;
+                    font-size: 2.5vw;
+                    padding: 2vw 2vw;
+                }
+               }
+            }
+        }
+    }
+    .banner_badge_top{
+        .card{
+            height: 145px;
+            .card-body{
+                img{
+                    height: 13vw;
+                    width: 13vw;
+                }
+                p{
+                    margin-bottom: 0;
+                    font-size: 4vw;
+                }
+            }
+        }
+        .row [class*=col-]:nth-child(2){
+            transform: translateY(-25px);
+        }
+    }
+    .digital_badgeDec{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px;
+            li{
+                flex: 0 0 50%;
+                max-width: 50%;
+                font-size: 3vw;
+                img, svg{
+                    margin-right: 3vw; 
+                }
             }
         }
     }
@@ -2220,13 +2316,29 @@ section{
     }
     .search_result{
         .result-card{
-            flex-direction: column;
+            padding: 2vw;
             .award-icon{
-                margin-right: 0;
+                margin-right: 2vw;
+                width: 45px;
+                height: 45px;
             }
             .business-info{
-                margin-bottom: 10px;
-                text-align: center;
+                padding: 2vw;
+                .business-name{
+                    font-size: 4vw;
+                    margin-bottom: 0.1vw;
+                }
+                .business-meta{
+                    font-size: 3vw;
+                    gap: 1vw;
+                    .meta-item{
+                        gap: 1vw;
+                    }
+                }
+            }
+            .view-btn{
+                padding: 2vw 5vw;
+                font-size: 3vw;
             }
         }
     }

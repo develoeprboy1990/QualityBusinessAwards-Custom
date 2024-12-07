@@ -507,6 +507,10 @@ section {
   color: #ffa801;
   font-weight: 400;
 }
+.judging_pannel .title p {
+  color: #666;
+  font-size: 1.1rem;
+}
 .judging_pannel .inner_jugdes {
   background: #fff;
   padding: 2rem;
@@ -521,6 +525,22 @@ section {
   margin: 0 auto 1.5rem;
   border-radius: 50%;
 }
+.judging_pannel .inner_jugdes .stat-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: rgba(255, 165, 0, 0.1);
+  border-radius: 50%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.judging_pannel .inner_jugdes .stat-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #FFA500;
+}
 .judging_pannel .inner_jugdes h4 {
   font-size: 2rem;
   font-weight: bold;
@@ -532,7 +552,13 @@ section {
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
-  margin-bottom: 0.8rem;
+}
+.judging_pannel .inner_jugdes p small {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 0.8rem;
 }
 .judging_pannel .inner_jugdes:hover {
   transform: translateY(-5px);
@@ -1044,6 +1070,10 @@ section {
   height: 15rem;
   position: relative;
 }
+.decal_img a {
+  display: block;
+  height: 100%;
+}
 .decal_img .mask {
   position: absolute;
   bottom: 0;
@@ -1056,6 +1086,9 @@ section {
   color: #fff;
   font-size: 20px;
   margin-bottom: 0;
+}
+.decal_img .mask p small {
+  display: block;
 }
 .decal_img.large {
   height: 28rem;
@@ -1126,6 +1159,9 @@ section {
 }
 .press_release.gym .pressImg img {
   object-fit: contain;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
 }
 .press_release [class*=col-]:first-child {
   background: #f8f9fa;
@@ -1979,6 +2015,14 @@ section {
     font-size: 14px;
     text-align: left;
   }
+  .press_release {
+    margin-top: 0;
+  }
+  .press_release.gym .pressImg img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
   .steps .step_img {
     text-align: center !important;
   }
@@ -2043,16 +2087,62 @@ section {
     margin-right: 15px;
   }
   .awards .awards_block {
-    flex-direction: column;
+    padding: 1vw;
   }
   .awards .awards_block .award_img {
-    width: 100%;
-    flex: 0 0 100%;
-    text-align: center;
+    padding: 1vw;
+    width: 30%;
+    flex: 0 0 30%;
+  }
+  .awards .awards_block .award_img img {
+    height: auto;
   }
   .awards .awards_block .award_desc {
-    width: 100%;
-    flex: 0 0 100%;
+    padding: 1vw;
+    width: 70%;
+    flex: 0 0 70%;
+  }
+  .awards .awards_block .award_desc h3 {
+    font-size: 4vw;
+  }
+  .awards .awards_block .award_desc p {
+    font-size: 3vw;
+    margin-bottom: 0;
+  }
+  .awards .awards_block .award_desc .bottom_btn {
+    margin-top: 2.5vw;
+  }
+  .awards .awards_block .award_desc .bottom_btn .btn {
+    margin-right: 2vw;
+    font-size: 2.5vw;
+    padding: 2vw 2vw;
+  }
+  .banner_badge_top .card {
+    height: 145px;
+  }
+  .banner_badge_top .card .card-body img {
+    height: 13vw;
+    width: 13vw;
+  }
+  .banner_badge_top .card .card-body p {
+    margin-bottom: 0;
+    font-size: 4vw;
+  }
+  .banner_badge_top .row [class*=col-]:nth-child(2) {
+    transform: translateY(-25px);
+  }
+  .digital_badgeDec ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .digital_badgeDec ul li {
+    flex: 0 0 50%;
+    max-width: 50%;
+    font-size: 3vw;
+  }
+  .digital_badgeDec ul li img, .digital_badgeDec ul li svg {
+    margin-right: 3vw;
   }
   .pricing .common_title h4 {
     font-size: 20px;
@@ -2085,14 +2175,30 @@ section {
     margin-top: 15px;
   }
   .search_result .result-card {
-    flex-direction: column;
+    padding: 2vw;
   }
   .search_result .result-card .award-icon {
-    margin-right: 0;
+    margin-right: 2vw;
+    width: 45px;
+    height: 45px;
   }
   .search_result .result-card .business-info {
-    margin-bottom: 10px;
-    text-align: center;
+    padding: 2vw;
+  }
+  .search_result .result-card .business-info .business-name {
+    font-size: 4vw;
+    margin-bottom: 0.1vw;
+  }
+  .search_result .result-card .business-info .business-meta {
+    font-size: 3vw;
+    gap: 1vw;
+  }
+  .search_result .result-card .business-info .business-meta .meta-item {
+    gap: 1vw;
+  }
+  .search_result .result-card .view-btn {
+    padding: 2vw 5vw;
+    font-size: 3vw;
   }
   .decal_wrraper .decal_desc .card .card-body ul li span {
     font-size: 14px;

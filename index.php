@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
     <li>
       <a href="#">
         <img src="images/home-clean.png" alt="">
-        <p>Home Cleaning</p>
+        <p>View All</p>
       </a>
     </li>
   </ul>
@@ -101,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
   <p>Businesses that have won a quality business award represent less than 1% of registered businesses in Canada. This is the seal of quality that a business has achieved an overall quality score of 95% or greater.
 
     If you have won a quality business award, we congratulate you. your dedication to providing a quality product and maintaining an overall fantastic customer experience is recognized.</p>
-    <a href="#" class="btn">Learn More</a>
+    <a href="about-us.php" class="btn">LEARN MORE</a>
   </div>
 </div>
 </div>

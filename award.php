@@ -38,11 +38,7 @@ try {
 <div class="container col-md-9">
     <div class="press_release gym">
         <div class="row">
-            <div class="col-md-6">
-                <div class="pressImg">
-                    <img src="/images/Design-1.jpg" alt="" class="img-fluid">
-                </div>
-            </div>
+            
             <div class="col-md-6">
                 <div class="press_desc">
                     <div class="common_title">
@@ -70,6 +66,11 @@ try {
                             <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
                         </svg></a>
                     </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pressImg">
+                    <img src="/images/Design-1.jpg" alt="" class="img-fluid">
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@
  
   <section class="banner_badge_top">
     <div class="row justify-content-center g-0">
-      <div class="col-md-3">
+      <div class="col-md-3 col-4">
         <div class="card">
           <div class="card-body">
             <img src="images/badge.svg" alt="">
@@ -20,7 +20,7 @@
         </div><!--end of card-->
       </div><!--end of col md 3-->
 
-      <div class="col-md-3">
+      <div class="col-md-3 col-4">
         <div class="card">
           <div class="card-body">
             <img src="images/banner.svg" alt="">
@@ -29,7 +29,7 @@
         </div><!--end of card-->
       </div><!--end of col md 3-->
 
-      <div class="col-md-3">
+      <div class="col-md-3 col-4">
         <div class="card">
           <div class="card-body">
             <img src="images/certificate.svg" alt="">

@@ -308,4 +308,10 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    $('html, body').animate({
+        scrollTop: $('.search_result').offset().top
+    }, 1000); // Adjust the duration (in milliseconds) as needed
+});
 </script>
