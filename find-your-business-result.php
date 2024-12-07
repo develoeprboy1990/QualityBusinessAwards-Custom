@@ -95,7 +95,7 @@ require('includes/header.php'); ?>
             <td><?php echo htmlspecialchars($result['category']); ?></td>
             <td><?php echo htmlspecialchars($result['city'] . ', ' . $result['state']); ?></td>
             <?php ?>
-            <td><a href="payment-step?business_name=<?php echo htmlspecialchars($result['business_name']); ?>&ID=<?php echo htmlspecialchars($result['id']); ?>&category=<?php echo htmlspecialchars($result['category']); ?>&state=<?php echo htmlspecialchars($result['state']); ?>&type=<?php echo $_GET['type']; ?>#form" class="btn">Select</a></td>
+            <td><a href="/payment-step?business_name=<?php echo htmlspecialchars($result['business_name']); ?>&ID=<?php echo htmlspecialchars($result['id']); ?>&category=<?php echo htmlspecialchars($result['category']); ?>&state=<?php echo htmlspecialchars($result['state']); ?>&type=<?php echo $_GET['type']; ?>#form" class="btn">Select</a></td>
           </tr>
          <?php endforeach; ?>
         </tbody>
@@ -134,7 +134,7 @@ require('includes/header.php'); ?>
 
     <h3>Proceed any way and we will find your business for you.</h3>
     <br>
-    <a class="b_form_home edit_search" href="payment-step?business_ID=0&amp;type=1#form">
+    <a class="b_form_home edit_search" href="/payment-step?business_ID=0&amp;type=1#form">
       <i aria-hidden="true" class="fas fa fa-arrow-circle-right"></i> CONTINUE TO NEXT STEP
     </a>
     </div>
