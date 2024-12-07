@@ -125,4 +125,61 @@ try {
     </div>
 </div>
 
+<section class="judging_pannel">
+        <div class="container">
+          <div class="title"><h2><span>QUALITY</span> RECOGNITION</h2> <p>Representing less than 1% of registered businesses in the USA</p></div><!--end of title-->
+          <div class="row">
+            <div class="col-md-3">
+              <div class="inner_jugdes">
+                <div class="stat-icon">
+                  <svg viewBox="0 0 24 24">
+                      <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path>
+                  </svg>
+              </div>
+                    <h4>10,000+</h4>
+                    <p>Trusted Authority <small>Businesses evaluated nationwide</small></p>
+              </div><!--end of inner judging-->
+            </div><!--end of col md 3-->
+
+            <div class="col-md-3">
+              <div class="inner_jugdes">
+                <div class="stat-icon">
+                  <svg viewBox="0 0 24 24">
+                      <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"></path>
+                  </svg>
+              </div>
+                    <h4>50+ States</h4>
+                    <p>Panel Member <small>Representing excellence across America</small></p>
+              </div><!--end of inner judging-->
+            </div><!--end of col md 3-->
+
+            <div class="col-md-3">
+              <div class="inner_jugdes">
+                <div class="stat-icon">
+                  <svg viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                  </svg>
+              </div>
+                    <h4>95%+</h4>
+                    <p>Quality Score <small>Required for consideration</small></p>
+              </div><!--end of inner judging-->
+            </div><!--end of col md 3-->
+
+            <div class="col-md-3">
+              <div class="inner_jugdes">
+                <div class="stat-icon">
+                  <svg viewBox="0 0 24 24">
+                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2v-2h2v2zm0-4h-2V7h2v6z"></path>
+                  </svg>
+              </div>
+                    <h4>3+</h4>
+                    <p>Review Sources <small>Multiple platform verification</small></p>
+              </div><!--end of inner judging-->
+            </div><!--end of col md 3-->
+
+          </div><!--end of row-->
+        </div><!--end of continer-->
+      </section>
+
+
 <?php require('includes/footer.php'); ?>
