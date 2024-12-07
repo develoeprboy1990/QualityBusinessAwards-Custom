@@ -267,7 +267,8 @@ $(document).ready(function() {
         const currentType = $('#type').val();
         
         if (isManualSearch) {
-            window.location.href = '/payment-step?business_ID=0&type=1#form';
+            const url = `/payment-step?business_ID=0&type=${encodeURIComponent(currentType)}#form`;
+            window.location.href = url;
         }else if (type === 'business') {
             const businessData = $(this).closest('.autocomplete-suggestion').data('business');
             const url = `/payment-step?business_name=${encodeURIComponent(businessData.text)}&ID=${encodeURIComponent(businessData.id)}&category=${encodeURIComponent(businessData.category)}&state=${encodeURIComponent(businessData.state)}&type=${encodeURIComponent(currentType)}#form`;
