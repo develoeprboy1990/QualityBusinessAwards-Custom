@@ -139,16 +139,16 @@
            <div class="card">
             <div class="card-body">
               <p>WAS $86.00</p>
-              <h3>$49.00 <small>/One Time</small></h3>
+              <h3>$55.00 <small>/One Time</small></h3>
             </div><!--end of card body-->
            </div><!--end of card-->
 
            <ul class="list-unstyled">
-            <li>Digital Certificate (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Badge (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Banner (Emailed) <a href="#">View Detail</a></li>
+            <li>Digital Certificate (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
+            <li>Digital Badge (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
+            <li>Digital Banner (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
            </ul>
-              <a href="#" class="btn">Order Now</a>
+              <a href="/find-your-business?type=1#form" class="btn">Order Now</a>
           </div><!--end of inner price-->
         </div><!--end of col md 3-->
 
@@ -160,18 +160,18 @@
            <div class="card">
             <div class="card-body">
               <p>WAS $250.00</p>
-              <h3>$190.00 <small>/One Time</small></h3>
+              <h3>$220.00 <small>/One Time</small></h3>
             </div><!--end of card body-->
            </div><!--end of card-->
 
            <ul class="list-unstyled">
-            <li>Digital Certificate (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Badge (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Banner (Emailed) <a href="#">View Detail</a></li>
-            <li>Window Decal (Shipped) <a href="#">View Detail</a></li>
-            <li>Plaque (Shipped) <a href="#">View Detail</a></li>
+            <li>Digital Certificate (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
+            <li>Digital Badge (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
+            <li>Digital Banner (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
+            <li>Window Decal (Shipped) <a href="/window-decals">View Detail</a></li>
+            <li>Plaque (Shipped) <a href="/plaque">View Detail</a></li>
            </ul>
-              <a href="#" class="btn">Order Now</a>
+              <a href="/find-your-business?type=2#form" class="btn">Order Now</a>
           </div><!--end of inner price-->
         </div><!--end of col md 3-->
 
@@ -183,19 +183,19 @@
            <div class="card">
             <div class="card-body">
               <p>WAS $320.00</p>
-              <h3>$249.00 <small>/One Time</small></h3>
+              <h3>$290.00 <small>/One Time</small></h3>
             </div><!--end of card body-->
            </div><!--end of card-->
 
            <ul class="list-unstyled">
-            <li>Digital Certificate (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Badge (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Banner (Emailed) <a href="#">View Detail</a></li>
-            <li>Window Decal (Shipped) <a href="#">View Detail</a></li>
-            <li>Trophy (Shipped) <a href="#">View Detail</a></li>
+            <li>Digital Certificate (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
+            <li>Digital Badge (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
+            <li>Digital Banner (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
+            <li>Window Decal (Shipped) <a href="/window-decals">View Detail</a></li>
+            <li>Trophy (Shipped) <a href="/glass-trophy">View Detail</a></li>
             <li class="opacity-0">&nbsp;</li>
            </ul>
-              <a href="#" class="btn">Order Now</a>
+              <a href="/find-your-business?type=3#form" class="btn">Order Now</a>
           </div><!--end of inner price-->
         </div><!--end of col md 3-->
 
@@ -206,27 +206,23 @@
            <h2>Everything + PR</h2>
            <div class="card">
             <div class="card-body">
-              <p>WAS $250.00</p>
-              <h3>$650.00 <small>/One Time</small></h3>
+              <p>WAS $850.00</p>
+              <h3>$700.00 <small>/One Time</small></h3>
             </div><!--end of card body-->
            </div><!--end of card-->
 
            <ul class="list-unstyled">
-            <li>Digital Certificate (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Badge (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Banner (Emailed) <a href="#">View Detail</a></li>
-            <li>Window Decal (Shipped) <a href="#">View Detail</a></li>
-            <li>Plaque (Shipped) <a href="#">View Detail</a></li>
-            <li>Trophy (Shipped) <a href="#">View Detail</a></li>
-           <li>Press Release Written About 
-            Your Award</li>
-           <li>Press release published on 
-            Digital Journal, Market Watch, 
-            ABnewswire, and Google news</li>
-           <li>Home Page Website Featured 
-            Listing (12 months)</li>
+            <li>Digital Certificate (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
+            <li>Digital Badge (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
+            <li>Digital Banner (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
+            <li>Window Decal (Shipped) <a href="/window-decals">View Detail</a></li>
+            <li>Plaque (Shipped) <a href="/plaque">View Detail</a></li>
+            <li>Trophy (Shipped) <a href="/glass-trophy">View Detail</a></li>
+            <li>Press Release Written About Your Award <a href="/press-release">View Detail</a</li>
+            <li>Press release published on Digital Journal, Market Watch, ABnewswire, and Google news</li>
+            <li>Home Page Website Featured Listing (12 months)</li>
            </ul>
-              <a href="#" class="btn">Order Now</a>
+              <a href="/find-your-business?type=4#form" class="btn">Order Now</a>
           </div><!--end of inner price-->
         </div><!--end of col md 3-->
       </div><!--end of row-->
