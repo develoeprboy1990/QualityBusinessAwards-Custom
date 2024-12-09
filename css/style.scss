@@ -802,136 +802,107 @@ section{
             font-size: 2rem;
         }
     }
-
-    .table{
-		border: 1px solid rgba(235,235,235,1);
-        margin-top: 200px;
-        font-family: $lato;
-        .remove_product{
-            td, th{
-                    padding-bottom: 0;
-                    border-bottom: none;
-            }
-            
+}
+.pricing_block{
+    margin-top: 60px;
+    .inner_price{
+        padding: 15px;
+        border: 1px solid $yellow;
+        box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.16);
+        border-radius: 25px;
+    }
+    h6{
+        text-align: center;
+        font-size: 20px;
+        span{
+            background-color: #C5FFB4;
+            color: #29AF00;
+            text-transform: uppercase;
         }
-        .description{
-            th{
-                h4{
-                    font-size: 13px;
-                    font-weight: 400;
-                    span{
-                        display: block;
-                        font-weight: 700;
-                        font-size: 16px;
-                        margin-bottom: 5px;
-                    }
-                    a{
-                        text-decoration: none;
-                        color: $yellow;
-                        &:hover{
-                            color: #000;
-                        }
-                    }
+    }
+    .img{
+        text-align: center;
+        margin: 20px 0;
+        img{
+            width: 60%;        
+        }
+    }
+    h2{
+        text-align: center;
+        color: #676767;
+        font-size: 32px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    .card{
+        border: 0;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.16);
+        border-radius: 15px;
+        text-align: center;
+        margin-bottom: 25px;
+        p{
+            color: #B3B3B3;
+            text-decoration: line-through;
+            text-decoration-color: red;
+            margin-bottom: 0;
+        }
+        h3{
+            color: $yellow;
+            font-weight: 800;
+            font-size: 40px;
+            margin-bottom: 0;
+            small{
+                color: #B3B3B3;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    ul{
+        li{
+            color: #565656;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 40px;
+            font-family: $lato;
+            font-size: 14px;
+            &:before{
+                content: "";
+                background-image: url(../images/check.png);
+                position: absolute;
+                left: 0;
+                top: 5px;
+                height: 18px;
+                width: 18px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            a{
+                color: $yellow;
+                display: block;
+                &:hover{
+                    color: #000;
                 }
             }
-            td{
-                text-align: center;
-            }
         }
-        .pricing_imgTop{
-            margin: 0 auto;
-            margin-top: -75px;
-            background-color: #fff;
-            width: 190px;
-            height: 190px;
-            border-radius: 50%;
-            text-align: center;
-           
-            img{
-                height: 180px;
-                width: 180px;
-            }
+    }
+    .btn{
+        width: 70%;
+        display: block;
+        margin: 25px auto;
+        background-color: $yellow;
+        color: #fff;
+        height: 51px;
+        border-radius: 15px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background-color: #000;
         }
-		th, td{
-			vertical-align: middle;
-			padding: 15px 20px;
-			text-align: left;
-			font-size: 13px;
-		}
-		td{
-			width: 280px;
-			max-width: 280px;
-			min-width: 280px;
-			border-left: 1px solid #e7e7e7;
-			border-bottom:1px solid #e7e7e7;
-			border-top: none;
-			border-right: none;
-			font-weight: 400;
-			
-			color: #000;
-			vertical-align: middle;
-		}
-
-		.product_img{
-			td{
-				.pro_img{
-                    text-align: center;
-					h3{
-						color: #000;
-						font-size: 18px;
-                        font-weight: 600;
-                        margin-bottom: 0;
-                        text-transform: uppercase;
-                        small{
-                            display: block;
-                            font-size: 13px;
-                            color: rgba(0 0 0 /50%);
-                            font-weight: 400;
-                            margin-top: 5px;
-                        }
-					}
-					h2{
-						color:#205ba7;
-                        font-size: 44px;
-                        font-weight: 800;
-                        
-                        small{
-                            display: block;
-                            color: #000;
-                            font-size: 15px;
-                            font-weight: 600;
-                        }
-					
-					}
-					.btn{
-						background-color: #205ba7;
-                        border: 2px solid transparent;
-						color: #fff;
-						border-radius: 25px 25px 25px 25px;
-                        padding: 15px 35px 15px 35px;
-						font-size: 15px;
-                        font-weight: 500;
-						width: 150px;
-						display: block;
-						margin:0 auto;
-                        font-family: "Oswald", Sans-serif;
-                        text-transform: uppercase;
-						&:hover{
-							background-color: #fff;
-							color: #205ba7;;
-                            border-color: #205ba7;
-						}
-					}
-                    h1{
-                        font-size: 24px;
-                        font-weight: 800;
-                        margin-top: 10px;   
-                        text-transform: uppercase;
-                    }
-				}
-			}
-		}
-	}
+    }
 }
 .bottom_btn{
     display: flex;
@@ -2282,6 +2253,11 @@ section{
             h4{
                 font-size: 20px;
             }
+        }
+    }
+    .pricing_block{
+        .inner_price{
+            margin-bottom: 30px;
         }
     }
     .glass_trophy{

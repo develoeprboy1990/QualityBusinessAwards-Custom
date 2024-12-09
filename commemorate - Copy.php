@@ -129,108 +129,128 @@
 <h2>Our <span>pricing</span></h2>
 <h4>All Purchases guarantee your 2024 listing will never expire.</h4>
 </div><!--end of common title-->
-<div class="pricing_block">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="inner_price">
-           <h6><span class="badge rounded-pill">DIGITAL ONLY</span></h6>
-           <div class="img"><img src="images/2024-badge-With-Sample.png" alt="" class="img-fluid"></div><!--end of img-->
-           <h2>Certificate</h2>
-           <div class="card">
-            <div class="card-body">
-              <p>WAS $86.00</p>
-              <h3>$49.00 <small>/One Time</small></h3>
-            </div><!--end of card body-->
-           </div><!--end of card-->
+<div class="table-responsive">
+<table class="table">
+<tr class="remove_product">
+  <th>&nbsp;</th>
+  <td><div class="pricing_imgTop"><img src="images/2024-badge-With-Sample.png" alt=""></div></td>
+  <td><div class="pricing_imgTop"><img src="images/Icon1.png" alt=""></div></td>
+  <td><div class="pricing_imgTop"><img src="images/Icon2.png" alt=""></div></td>
+  <td><div class="pricing_imgTop"><img src="images/Icon3.png" alt=""></div></td>
+</tr>
 
-           <ul class="list-unstyled">
-            <li>Digital Certificate (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Badge (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Banner (Emailed) <a href="#">View Detail</a></li>
-           </ul>
-              <a href="#" class="btn">Order Now</a>
-          </div><!--end of inner price-->
-        </div><!--end of col md 3-->
+<tr class="product_img">
+  <th></th>
+  <td>
+    <div class="pro_img">
+      <h3>DIGITAL ONLY <small>WAS $86.00</small></h3>
+      <h2>$49 <small>/One Time</small></h2>
+      <a href="find-your-business?type=1#form" class="btn">Order Now</a>
+      <h1>Certificate</h1>
+    </div><!--END OF PRO IMG-->
+  </td>
+  
+  <td>
+    <div class="pro_img">
+      <h3>Require Shipping <small>WAS $250.00</small></h3>
+      <h2>$190 <small>/One Time</small></h2>
+      <a href="find-your-business?type=2#form" class="btn">Order Now</a>
+      <h1>Plaque</h1>
+    </div><!--END OF PRO IMG-->
+  </td>
+  
+  <td>
+    <div class="pro_img">
+      <h3>Require Shipping <small>WAS $320.00</small></h3>
+      <h2>$249 <small>/One Time</small></h2>
+      <a href="find-your-business?type=3#form" class="btn">Order Now</a>
+      <h1>Trophy</h1>
+    </div><!--END OF PRO IMG-->
+  </td>
+  
+  <td>
+    <div class="pro_img">
+      <h3>Require Shipping <small>WAS $250.00</small></h3>
+      <h2>$650 <small>/One Time</small></h2>
+      <a href="find-your-business?type=4#form" class="btn">Order Now</a>
+      <h1>Everything + PR</h1>
+    </div><!--END OF PRO IMG-->
+  </td>
+</tr>
+<tr class="description">
+  <th><h4><span>Digital Certificate</span> <a href="banner-badge-certificate">(View Details)</a> – Emailed</h4></th>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+</tr>
 
-        <div class="col-md-3">
-          <div class="inner_price">
-           <h6><span class="badge rounded-pill">Require Shipping</span></h6>
-           <div class="img"><img src="images/Icon1.png" alt="" class="img-fluid"></div><!--end of img-->
-           <h2>Plaque</h2>
-           <div class="card">
-            <div class="card-body">
-              <p>WAS $250.00</p>
-              <h3>$190.00 <small>/One Time</small></h3>
-            </div><!--end of card body-->
-           </div><!--end of card-->
+<tr class="description">
+  <th><h4><span>Digital Badge</span> <a href="banner-badge-certificate">(View Details)</a> – Emailed</h4></th>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+</tr>
 
-           <ul class="list-unstyled">
-            <li>Digital Certificate (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Badge (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Banner (Emailed) <a href="#">View Detail</a></li>
-            <li>Window Decal (Shipped) <a href="#">View Detail</a></li>
-            <li>Plaque (Shipped) <a href="#">View Detail</a></li>
-           </ul>
-              <a href="#" class="btn">Order Now</a>
-          </div><!--end of inner price-->
-        </div><!--end of col md 3-->
+<tr class="description">
+  <th><h4><span>Digital Banner</span> <a href="banner-badge-certificate">(View Details)</a> – Emailed</h4></th>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+</tr>
 
-        <div class="col-md-3">
-          <div class="inner_price">
-           <h6><span class="badge rounded-pill">Require Shipping</span></h6>
-           <div class="img"><img src="images/Icon2.png" alt="" class="img-fluid"></div><!--end of img-->
-           <h2>Trophy</h2>
-           <div class="card">
-            <div class="card-body">
-              <p>WAS $320.00</p>
-              <h3>$249.00 <small>/One Time</small></h3>
-            </div><!--end of card body-->
-           </div><!--end of card-->
+<tr class="description">
+  <th><h4><span>Window Decal</span> <a href="window-decals">(View Details)</a> – Shipped</h4></th>
+  <td>&nbsp;</td>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+</tr>
 
-           <ul class="list-unstyled">
-            <li>Digital Certificate (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Badge (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Banner (Emailed) <a href="#">View Detail</a></li>
-            <li>Window Decal (Shipped) <a href="#">View Detail</a></li>
-            <li>Trophy (Shipped) <a href="#">View Detail</a></li>
-            <li class="opacity-0">&nbsp;</li>
-           </ul>
-              <a href="#" class="btn">Order Now</a>
-          </div><!--end of inner price-->
-        </div><!--end of col md 3-->
+<tr class="description">
+  <th><h4><span>Plaque</span> <a href="plaque">(View Details)</a> – Shipped</h4></th>
+  <td>&nbsp;</td>
+  <td><img src="images/check.png" alt=""></td>
+  <td>&nbsp;</td>
+  <td><img src="images/check.png" alt=""></td>
+</tr>
 
-        <div class="col-md-3">
-          <div class="inner_price">
-           <h6><span class="badge rounded-pill">Require Shipping</span></h6>
-           <div class="img"><img src="images/new.png" alt="" class="img-fluid"></div><!--end of img-->
-           <h2>Everything + PR</h2>
-           <div class="card">
-            <div class="card-body">
-              <p>WAS $250.00</p>
-              <h3>$650.00 <small>/One Time</small></h3>
-            </div><!--end of card body-->
-           </div><!--end of card-->
+<tr class="description">
+  <th><h4><span>Trophy</span> <a href="glass-trophy">(View Details)</a> – Shipped</h4></th>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td><img src="images/check.png" alt=""></td>
+  <td><img src="images/check.png" alt=""></td>
+</tr>
 
-           <ul class="list-unstyled">
-            <li>Digital Certificate (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Badge (Emailed) <a href="#">View Detail</a></li>
-            <li>Digital Banner (Emailed) <a href="#">View Detail</a></li>
-            <li>Window Decal (Shipped) <a href="#">View Detail</a></li>
-            <li>Plaque (Shipped) <a href="#">View Detail</a></li>
-            <li>Trophy (Shipped) <a href="#">View Detail</a></li>
-           <li>Press Release Written About 
-            Your Award</li>
-           <li>Press release published on 
-            Digital Journal, Market Watch, 
-            ABnewswire, and Google news</li>
-           <li>Home Page Website Featured 
-            Listing (12 months)</li>
-           </ul>
-              <a href="#" class="btn">Order Now</a>
-          </div><!--end of inner price-->
-        </div><!--end of col md 3-->
-      </div><!--end of row-->
-    </div><!--end of pricing blocks-->
+<tr class="description">
+  <th><h4><span>Press Release Written About Your Award</span> <a href="press-release">(View Details)</a></h4></th>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td><img src="images/check.png" alt=""></td>
+</tr>
+
+<tr class="description">
+  <th><h4><span>Press release published on Digital Journal, Market Watch, ABnewswire, and Google news</span></h4></th>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td>
+  <td><img src="images/check.png" alt=""></td>
+</tr>
+
+<tr class="description">
+  <th><h4><span>Home Page Website Featured Listing (12 months)</span></h4></th>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td>
+  <td><img src="images/check.png" alt=""></td>
+</tr>
+
+</table>
+</div><!--END OF TABLE RESPONSIVE-->
 </div><!--end of container-->
 </section>
 
