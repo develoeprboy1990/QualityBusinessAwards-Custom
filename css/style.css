@@ -1061,6 +1061,12 @@ section {
   display: block;
   height: 100%;
 }
+.decal_img img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .decal_img .mask {
   position: absolute;
   bottom: 0;
@@ -1080,6 +1086,12 @@ section {
 .decal_img.large {
   height: 28rem;
   margin-bottom: 25px;
+}
+.decal_img.large img {
+  object-fit: cover;
+  object-position: center;
+  height: 28rem;
+  width: 100%;
 }
 
 .legend_btn {
@@ -1146,7 +1158,7 @@ section {
 }
 .press_release.gym .pressImg img {
   object-fit: contain;
-  width: 70%;
+  width: 90%;
   display: block;
   margin: 0 auto;
 }
@@ -1173,6 +1185,9 @@ section {
   border: 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
+}
+.press_release .press_desc .common_title .card .card-body ul {
+  margin: 0;
 }
 .press_release .press_desc .common_title .card .card-body ul li {
   font-size: 1.4rem;
@@ -1218,6 +1233,69 @@ section {
   width: 24px;
   height: 24px;
   animation: bounceArrow 2s infinite;
+}
+.press_release.award_winner {
+  box-shadow: none;
+}
+.press_release.award_winner .common_title p {
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  color: #ffa801 !important;
+}
+.press_release.award_winner .common_title .card {
+  background: #f8f9fa;
+  border: 1px solid #eee !important;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: none !important;
+}
+.press_release.award_winner .common_title .card .card-body {
+  padding: 0;
+}
+.press_release.award_winner .common_title .card .card-body ul li {
+  font-size: 1.75rem !important;
+  font-weight: 700;
+  color: #2c3338;
+  font-family: "lato", sans-serif;
+}
+.press_release.award_winner [class*=col-]:first-child {
+  background: #fff;
+}
+.press_release.award_winner .press_desc p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
+}
+.press_release.award_winner .highlighter {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-width: 3px;
+}
+.press_release.award_winner .highlighter p {
+  color: #555 !important;
+  margin-bottom: 0;
+}
+.press_release.award_winner .bottom_btn .btn.btn_fill {
+  border: 2px solid #2c3338;
+  border-radius: 4px;
+  color: #2c3338;
+  background: transparent;
+}
+.press_release.award_winner .bottom_btn .btn.btn_fill:hover {
+  background: #2c3338;
+  color: #fff;
+}
+.press_release.award_winner .bottom_btn .btn.btn_outline {
+  background: rgba(255, 165, 0, 0.1);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 165, 0, 0.2);
+  color: #2c3338;
+}
+.press_release.award_winner .bottom_btn .btn.btn_outline:hover {
+  background: .press_release.award_winner .bottom_btn .btn.btn_outline:hover yellow;
 }
 
 @keyframes bounceArrow {
@@ -1475,9 +1553,14 @@ section {
 .rated {
   margin: 100px 0;
 }
+.rated .row {
+  position: relative;
+  z-index: 2;
+}
 .rated .legend {
-  background-color: #1F5BA7;
-  padding: 15px 15px 15px 15px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c49c56+1,b08849+9,f6e3a0+22,faf5d9+36,c49c56+46,915d38+59,c49c56+75,faf5d9+89,c49c56+100 */
+  background: linear-gradient(to right, rgb(196, 156, 86) 1%, rgb(176, 136, 73) 9%, rgb(246, 227, 160) 22%, rgb(250, 245, 217) 36%, rgb(196, 156, 86) 46%, rgb(145, 93, 56) 59%, rgb(196, 156, 86) 75%, rgb(250, 245, 217) 89%, rgb(196, 156, 86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  padding: 8px 15px 8px 15px;
   border-radius: 45px 45px 45px 45px;
   color: #FFFFFF;
   font-family: "lato", sans-serif;
@@ -1487,45 +1570,105 @@ section {
   text-align: center;
   margin: 0 auto;
   margin-top: -50px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.16);
+  position: relative;
+  z-index: 999;
+}
+.rated .card-body {
+  background-color: #fff;
+  border-radius: 25px;
+  padding-bottom: 10px;
+  background: linear-gradient(to right, rgb(196, 156, 86) 1%, rgb(176, 136, 73) 9%, rgb(246, 227, 160) 22%, rgb(250, 245, 217) 36%, rgb(196, 156, 86) 46%, rgb(145, 93, 56) 59%, rgb(196, 156, 86) 75%, rgb(250, 245, 217) 89%, rgb(196, 156, 86) 100%);
+  position: relative;
+}
+.rated .card-body:after {
+  content: "";
+  position: absolute;
+  top: 5px; /* Adjust based on border width */
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: white; /* Inner content background */
+  border-radius: 25px; /* Adjust to match inner border corner */
 }
 .rated .card {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border-color: #ffa801;
+  border: 0;
   border-width: 2px;
   border-radius: 25px;
+  position: relative;
+  margin-top: 0 !important;
 }
 .rated .card .card-body .card {
   background-color: #f5f5f5;
   margin: 20px 0;
   border-radius: 5px;
-  border-width: 1px;
-  border-color: #ccc;
   box-shadow: none;
+  border: 2px solid #C59D58;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.rated .card .card-body .card .card-body {
+  border-radius: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background: #fff;
+}
+.rated .card .card-body .card h3 {
+  background: linear-gradient(to right, rgb(196, 156, 86) 1%, rgb(176, 136, 73) 9%, rgb(246, 227, 160) 22%, rgb(250, 245, 217) 36%, rgb(196, 156, 86) 46%, rgb(145, 93, 56) 59%, rgb(196, 156, 86) 75%, rgb(250, 245, 217) 89%, rgb(196, 156, 86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  padding: 5px 10px;
+  margin-bottom: 0;
 }
 .rated .card .card-body .card ul {
   margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 333;
 }
 .rated .card .card-body .card ul li {
+  max-width: 50%;
+  flex: 0 0 50%;
+  margin-bottom: 10px;
   font-size: 1.2rem;
   font-weight: 700;
   color: #2c3338;
+  font-family: "lato", sans-serif;
 }
-.rated .card .card-body .card ul li svg {
+.rated .card .card-body .card ul li:last-child {
+  margin-bottom: 0;
+}
+.rated .card .card-body .card ul li img {
   width: 24px;
   height: 24px;
   fill: #ffa801;
+  margin-right: 10px;
 }
 .rated p {
   font-family: "lato", sans-serif;
   font-size: 14px;
+  border-bottom: 1px solid transparent; /* Make the border transparent initially */
+  border-image: linear-gradient(to right, rgb(196, 156, 86) 1%, rgb(176, 136, 73) 9%, rgb(246, 227, 160) 22%, rgb(250, 245, 217) 36%, rgb(196, 156, 86) 46%, rgb(145, 93, 56) 59%, rgb(196, 156, 86) 75%, rgb(250, 245, 217) 89%, rgb(196, 156, 86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-image-slice: 1; /* Slice the border image to fit */
+  padding-bottom: 5px;
+}
+.rated .rating {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
 }
 .rated .rating li {
   display: flex;
-  justify-content: center;
+  max-width: 50%;
+  flex: 0 0 50%;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  color: #C59D58;
   font-weight: 700;
+}
+.rated .rating li img {
+  width: 100px;
 }
 .rated .rating li span {
   font-size: 20px;
@@ -1533,13 +1676,33 @@ section {
   margin-left: 25px;
 }
 .rated .bottom_btn {
-  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
 }
 .rated .bottom_btn .btn {
   width: 100%;
   margin: 0;
   padding: 10px 12px;
   margin-bottom: 15px;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+.rated .bottom_btn .btn.btn_fill {
+  background-color: #000000;
+}
+.rated .bottom_btn .btn.btn_outline {
+  color: #C59D58;
+  border-color: #C59D58;
+  margin-left: 5px;
+}
+.rated .bottom_btn .btn.btn_outline:hover {
+  background-color: #C59D58;
+  color: #fff;
+}
+
+.ward_logo img {
+  width: 100%;
 }
 
 /*-----BUSINESS FINDER--------*/
@@ -1809,6 +1972,20 @@ section {
   background-color: rgba(0, 0, 0, 0.05);
   padding: 25px;
   border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.certi_img img {
+  max-width: 50%;
+  flex: 0 0 50%;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+}
+.certi_img img.hori {
+  margin-right: -50px;
+  position: relative;
 }
 
 .order_now {
@@ -2219,6 +2396,87 @@ section {
   }
   .decal_wrraper .decal_title p {
     font-size: 14px;
+  }
+  .pricing_block .img {
+    margin: 10px 0;
+  }
+  .pricing_block .img img {
+    width: 35%;
+  }
+  .pricing_block h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .pricing_block .card h3 {
+    font-size: 30px;
+  }
+  .pricing_block .card p {
+    font-size: 12px;
+  }
+  .pricing_block ul li {
+    font-size: 13px;
+  }
+  .pricing_block .btn {
+    height: 40px;
+    width: 50%;
+    font-size: 14px;
+  }
+  .press_release.gym .bottom_btn .btn {
+    font-size: 3vw;
+    height: auto;
+    padding: 1.5vw 1vw;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .press_release.gym .bottom_btn .btn svg {
+    width: 15px;
+    height: 15px;
+  }
+  .rated .legend {
+    font-size: 5.5vw;
+  }
+  .rated p {
+    font-size: 3vw;
+  }
+  .rated .ward_logo {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .rated .ward_logo img {
+    width: 70%;
+  }
+  .rated .card-body {
+    padding-bottom: 30px;
+  }
+  .rated .card .card-body .card h3 {
+    font-size: 4.5vw;
+  }
+  .rated .card .card-body .card ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .rated .card .card-body .card ul li {
+    font-size: 3vw;
+  }
+  .rated .card .card-body .card ul li img {
+    width: 18px;
+    height: 18px;
+  }
+  .rated .rating {
+    margin-bottom: 15px;
+  }
+  .rated .rating li span {
+    font-size: 3.2vw;
+    width: auto;
+    margin-left: 5px;
+  }
+  .rated .rating li img {
+    width: 20vw;
+  }
+  .rated .bottom_btn .btn {
+    font-size: 3.2vw;
   }
 }
 

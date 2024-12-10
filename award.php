@@ -36,10 +36,10 @@ try {
 
 <!-- Main Content -->
 <div class="container col-md-9">
-    <div class="press_release gym">
+    <div class="press_release gym award_winner">
         <div class="row">
             
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <div class="press_desc">
                     <div class="common_title">
                         <p>Winner For The Best</p>
@@ -68,7 +68,7 @@ try {
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="pressImg">
                     <img src="/images/Design-1.jpg" alt="" class="img-fluid">
                 </div>
