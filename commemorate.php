@@ -92,7 +92,7 @@
           <p>Custom press releases written about your company and category. Distributed to North American news outlets.</p>
           <div class="bottom_btn">
             <a href="press-release" class="btn btn_yellow">View Sample</a>
-            <a href="#" class="btn btn_green">View Price</a>
+            <a href="#pay" class="btn btn_green">View Price</a>
           </div><!--end of bottom btn-->
         </div><!--end of award desc-->
       </div><!--end of awad block-->

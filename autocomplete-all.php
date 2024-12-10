@@ -15,6 +15,7 @@ if ($term) {
                 'business' as type,
                 id,
                 category,
+                city,
                 state
             FROM awards 
             WHERE business_name ILIKE :term 

@@ -228,7 +228,7 @@ $(document).ready(function() {
                                                 ${getIconForType('category')} ${item.category}
                                             </span>
                                             <span class="business-location">
-                                                ${getIconForType('location')} ${item.state}
+                                                ${getIconForType('location')} ${item.city}, ${item.state}
                                             </span>
                                         </div>
                                     </div>
