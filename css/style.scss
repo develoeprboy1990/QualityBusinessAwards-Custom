@@ -1084,7 +1084,11 @@ section{
     position: relative;
     a{
         display: block;
-        height: 100%;
+        text-decoration: none;
+        color: #fff;
+        &:hover{
+            color: $yellow;
+        }
     }
     img{
         height: 15rem;

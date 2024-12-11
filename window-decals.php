@@ -10,7 +10,41 @@
   <div class="container">
   <div class="decal_desc">
     <div class="row">
-      <div class="col-md-6">
+      
+
+      <div class="col-md-6 order-md-2">
+        <div class="row popup-gallery">
+          <div class="col-md-12">
+            <div class="decal_img large">
+             <img src="images/1-R1-scaled-1.jpg" alt="" class="img-fluid">
+              <div class="mask">
+                <p>Premium storefront display <small><a href="images/1-R1-scaled-1.jpg" title="Premium storefront display">Click to enlarge</a></small></p>
+              </div><!--end of mask-->
+            </div><!--end of decal img-->
+          </div><!--end of col md 12-->
+
+          <div class="col-md-6">
+            <div class="decal_img">
+             <img src="images/2-R1-2-scaled-1.jpg" alt="" class="img-fluid">
+              <div class="mask">
+                <p><small> <a href="images/2-R1-2-scaled-1.jpg">Click to enlarge</a></small></p>
+              </div><!--end of mask-->
+            </div><!--end of decal img-->
+          </div><!--end of col md 6-->
+
+          <div class="col-md-6">
+            <div class="decal_img">
+              <img src="images/3-R1-scaled-1.jpg" alt="" class="img-fluid">
+              <div class="mask">
+                <p><small><a href="images/3-R1-scaled-1.jpg">Click to enlarge</a></small></p>
+              </div><!--end of mask-->
+            </div><!--end of decal img-->
+          </div><!--end of col md 6-->
+
+        </div><!--end of row-->
+      </div><!--end of col md 6-->
+
+      <div class="col-md-6 order-md-1">
         <h2>Windows Decal</h2>
         <p>Stand tall and stand out with the Quality Business Awards’ official Window Decals, a symbol of local excellence and sector leadership. These decals are designed to universally fit any storefront or office window, offering a clear and visible marker of your prestigious recognition as a standout business within your community and industry.</p>
         <p>Our decals boast a straightforward yet impactful design that clearly states your achievement: “2024 WINNER, QUALITY RATING OVER 95%”. This message isn’t just a claim; it’s a verified testament to your status as a top-tier service provider</p>
@@ -59,34 +93,6 @@
           <a href="#" class="btn btn_fill">Order Now</a>
         </div><!--end of bottom btn-->
 
-      </div><!--end of col md 6-->
-
-      <div class="col-md-6">
-        <div class="row popup-gallery">
-          <div class="col-md-12">
-            <div class="decal_img large">
-              <a href="images/1-R1-scaled-1.jpg" title="Premium storefront display"><img src="images/1-R1-scaled-1.jpg" alt="" class="img-fluid"></a>
-              <div class="mask">
-                <p>Premium storefront display</p>
-              </div><!--end of mask-->
-            </div><!--end of decal img-->
-          </div><!--end of col md 12-->
-
-          <div class="col-md-6">
-            <div class="decal_img">
-              <a href="images/2-R1-2-scaled-1.jpg"><img src="images/2-R1-2-scaled-1.jpg" alt="" class="img-fluid"></a>
-              
-            </div><!--end of decal img-->
-          </div><!--end of col md 6-->
-
-          <div class="col-md-6">
-            <div class="decal_img">
-              <a href="images/3-R1-scaled-1.jpg"><img src="images/3-R1-scaled-1.jpg" alt="" class="img-fluid"></a>
-              
-            </div><!--end of decal img-->
-          </div><!--end of col md 6-->
-
-        </div><!--end of row-->
       </div><!--end of col md 6-->
 
     </div><!--end of row-->

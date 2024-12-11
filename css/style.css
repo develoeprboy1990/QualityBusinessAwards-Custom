@@ -1059,7 +1059,11 @@ section {
 }
 .decal_img a {
   display: block;
-  height: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+.decal_img a:hover {
+  color: #ffa801;
 }
 .decal_img img {
   height: 15rem;
