@@ -19,20 +19,14 @@
 
       <div class="col-md-6">
         <div class="row popup-gallery">
-          <div class="col-md-6">
-            <div class="decal_img">
-             <a href="images/images-2-150x150.jpg"> <img src="images/images-2-150x150.jpg" alt="" class="img-fluid"></a>
-             <div class="mask">
-                <p><small>Click to enlarge</small></p>
-              </div>
-            </div><!--end of decal img-->
-          </div><!--end of col md 6-->
 
           <div class="col-md-6">
             <div class="decal_img">
-              <a href="images/Z06_8907-HDR-scaled-1-1024x679.jpg"><img src="images/Z06_8907-HDR-scaled-1-1024x679.jpg" alt="" class="img-fluid"></a>
+              <a href="images/Z06_8907-HDR-scaled-1-1024x679.jpg">
+                <img src="images/Z06_8907-HDR-scaled-1-1024x679.jpg" alt="" class="img-fluid">
+              </a>
               <div class="mask">
-                <p><small>Click to enlarge</small></p>
+                <p><small><a href="images/Z06_8907-HDR-scaled-1-1024x679.jpg">Click to enlarge</a></small></p>
               </div>
             </div><!--end of decal img-->
           </div><!--end of col md 6-->
@@ -41,7 +35,7 @@
             <div class="decal_img">
               <a href="images/Z06_8913-HDR-scaled-1-1024x682.jpg"><img src="images/Z06_8913-HDR-scaled-1-1024x682.jpg" alt="" class="img-fluid"></a>
               <div class="mask">
-                <p><small>Click to enlarge</small></p>
+                <p><small><a href="images/Z06_8913-HDR-scaled-1-1024x682.jpg">Click to enlarge</a></small></p>
               </div>
             </div><!--end of decal img-->
           </div><!--end of col md 6-->
@@ -50,7 +44,7 @@
             <div class="decal_img">
               <a href="images/Z06_8919-HDR-scaled-1-1024x681.jpg"><img src="images/Z06_8919-HDR-scaled-1-1024x681.jpg" alt="" class="img-fluid"></a>
               <div class="mask">
-                <p><small>Click to enlarge</small></p>
+                <p><small><a href="images/Z06_8919-HDR-scaled-1-1024x681.jpg">Click to enlarge</a></small></p>
               </div>
             </div><!--end of decal img-->
           </div><!--end of col md 6-->
@@ -78,7 +72,7 @@ $(document).ready(function() {
 		image: {
 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+				//return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
 			}
 		}
 	});

@@ -56,7 +56,7 @@ try {
                             </div>
                         </div>
                     </div>
-                    <p>The Quality Business Awards recognizes businesses that achieve an average quality score of 95% or greater over the previous 12 months. To learn more about our selection criteria, please <a href="#">click here.</a></p>
+                    <p>The Quality Business Awards recognizes businesses that achieve an average quality score of 95% or greater over the previous 12 months. To learn more about our selection criteria, please <a href="/about-us">click here.</a></p>
                     <div class="highlighter">
                         <p>Our winner has been selected as the top performer in their category and location. From the whole team, we would like to congratulate them on their outstanding results.</p>
                     </div>
@@ -98,6 +98,9 @@ try {
                                     <li><svg class="detail-icon" viewBox="0 0 24 24">
                                         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"></path>
                                     </svg> <?php echo htmlspecialchars($award['city']); ?></li>
+                                    <li><svg class="detail-icon" viewBox="0 0 24 24">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"></path>
+                                    </svg> Contact Business For Address</li>
                                 </ul>
                             </div>
                         </div>

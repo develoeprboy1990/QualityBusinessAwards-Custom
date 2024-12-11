@@ -16,16 +16,20 @@
         <div class="row popup-gallery">
           <div class="col-md-12">
             <div class="decal_img large">
-             <img src="images/1-R1-scaled-1.jpg" alt="" class="img-fluid">
+              <a href="images/1-R1-scaled-1.jpg">
+                <img src="images/1-R1-scaled-1.jpg" alt="" class="img-fluid">
+              </a>
               <div class="mask">
-                <p>Premium storefront display <small><a href="images/1-R1-scaled-1.jpg" title="Premium storefront display">Click to enlarge</a></small></p>
+                <p><!-- Premium storefront display --><small><a href="images/1-R1-scaled-1.jpg" title="Premium storefront display">Click to enlarge</a></small></p>
               </div><!--end of mask-->
             </div><!--end of decal img-->
           </div><!--end of col md 12-->
 
           <div class="col-md-6">
             <div class="decal_img">
-             <img src="images/2-R1-2-scaled-1.jpg" alt="" class="img-fluid">
+              <a href="images/2-R1-2-scaled-1.jpg">
+                <img src="images/2-R1-2-scaled-1.jpg" alt="" class="img-fluid">
+              </a>
               <div class="mask">
                 <p><small> <a href="images/2-R1-2-scaled-1.jpg">Click to enlarge</a></small></p>
               </div><!--end of mask-->
@@ -34,7 +38,9 @@
 
           <div class="col-md-6">
             <div class="decal_img">
-              <img src="images/3-R1-scaled-1.jpg" alt="" class="img-fluid">
+              <a href="images/3-R1-scaled-1.jpg">
+                <img src="images/3-R1-scaled-1.jpg" alt="" class="img-fluid">
+              </a>
               <div class="mask">
                 <p><small><a href="images/3-R1-scaled-1.jpg">Click to enlarge</a></small></p>
               </div><!--end of mask-->
@@ -54,37 +60,36 @@
             <h4>Premium Specifications</h4>
             <ul class="list-unstyled">
               <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg> <span>Durable, High-Quality Material for Inside Glass Application</span></li>
-
-            <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-          </svg> <span>Perfectly Sized at 10 x 10 cm for Optimal Visibility</span></li>
+              </svg> <span>Durable, High-Quality Material for Inside Glass Application</span></li>
 
-          <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-        </svg> <span>Universal Fit for Any Window</span></li>
+              <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg> <span>Perfectly Sized at 10 x 10 cm for Optimal Visibility</span></li>
 
-        <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-      </svg> <span>Effortless Self-Application for a Professional Look</span></li>
+              <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg> <span>Universal Fit for Any Window</span></li>
 
-      <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-    </svg> <span>Resistant to Fading, Ensuring Long-Lasting Vibrancy</span></li>
+              <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg> <span>Effortless Self-Application for a Professional Look</span></li>
 
-    <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-  </svg> <span>Adhesive Designed to Leave No Residue Upon Removal</span></li>
+              <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg> <span>Resistant to Fading, Ensuring Long-Lasting Vibrancy</span></li>
 
-  <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-</svg> <span>Bold, Legible Text that Celebrates Your Winning Status</span></li>
+              <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg> <span>Adhesive Designed to Leave No Residue Upon Removal</span></li>
 
-<li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-</svg> <span>Perfect for Shop Windows, Office Doors, and Vehicle Displays</span></li>
+              <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg> <span>Bold, Legible Text that Celebrates Your Winning Status</span></li>
 
+              <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg> <span>Perfect for Shop Windows, Office Doors, and Vehicle Displays</span></li>
             </ul>
           </div><!--end of card body-->
         </div><!--end of card-->
@@ -120,7 +125,7 @@ $(document).ready(function() {
 		image: {
 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+				//return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
 			}
 		}
 	});
