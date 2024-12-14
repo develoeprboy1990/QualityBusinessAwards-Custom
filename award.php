@@ -129,7 +129,7 @@ try {
     <div class="rated">
           <div class="card">
             <div class="card-body">
-              <div class="legend">#1 BEST RATED 2024</div><!--end of legend-->
+              <div class="legend">#1 BEST RATED <?php echo htmlspecialchars($award['year']); ?></div><!--end of legend-->
               <div class="row align-items-center">
                 <div class="col-md-3">
                   <div class="ward_logo">
@@ -139,18 +139,18 @@ try {
                 <div class="col-md-9">
                  
                   <div class="card">
-                    <h3>3D Domed Labels Inc</h3>
+                    <h3><?php echo htmlspecialchars($award['business_name']); ?></h3>
                     <div class="card-body">
                       <ul class="list-unstyled">
-                        <li> <img src="/images/cup.svg" alt="">3D Printing</li>
-                        <li> <img src="/images/address.svg" alt="">Ajax</li>
-                        <li> <img src="/images/address.svg" alt="">Address</li>
+                        <li> <img src="/images/cup.svg" alt=""><?php echo htmlspecialchars($award['category']); ?></li>
+                        <li> <img src="/images/address.svg" alt=""><?php echo htmlspecialchars($award['city']); ?></li>
+                        <li> <img src="/images/address.svg" alt="">Contact Business For Address</li>
                         
                         
                       </ul>
                     </div><!--end of card body-->
                   </div><!--end of card-->
-                  <p>We have awarded The Gym On Locke as The Best Gym in Hamilton for 2024. An overall quality score exceeding 95% was achieved, making them the top ranked in Hamilton</p>
+                  <p>We have awarded <?php echo htmlspecialchars($award['business_name']); ?> as The Best <?php echo htmlspecialchars($award['category']); ?> in <?php echo htmlspecialchars($award['city']); ?> for <?php echo htmlspecialchars($award['year']); ?>. An overall quality score exceeding 95% was achieved, making them the top ranked in <?php echo htmlspecialchars($award['city']); ?></p>
                 
                   <div class="row">
                     <div class="col-md-8">
@@ -163,7 +163,9 @@ try {
                     </div><!--end of col md 8-->
                     <div class="col-md-4">
                       <div class="bottom_btn">
-                        <a href="#" class="btn btn_fill">Visit Website</a>
+                        <?php if (!empty($award['website']) && $award['website'] !== 'NULL'): ?>
+                                <a href="<?php echo htmlspecialchars($award['website']); ?>" class="btn btn_fill" target="_blank">Visit Website</a>
+                            <?php endif; ?>
                         <a href="#" class="btn btn_outline">Click to verify</a>
                       </div>
                     </div><!--end of col md 4-->
