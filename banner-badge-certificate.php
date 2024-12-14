@@ -133,7 +133,7 @@
 <section class="certificate">
 <div class="container col-md-9">
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-5">
     <div class="digital_badgeDec">
       <div class="common_title text-start">
         <h2>CERTIFICATE</h2>
@@ -156,8 +156,11 @@
       </ul>
     </div><!--end of digital badge desc-->
    </div><!--end of col md 6-->
-   <div class="col-md-6">
-    <div class="certi_img"><img src="images/Sample-Certificate.jpg" alt="" class="img-fluid"></div><!--end of certi-->
+   <div class="col-md-7">
+    <div class="certi_img">
+      <img src="images/Sample-Certificate.jpg" alt="" class="img-fluid hori">
+      <img src="images/Sample-Certificate2.jpg" alt="" class="img-fluid verti">
+    </div><!--end of certi-->
     
    </div><!--end of col md 6-->
 </div><!--end of row-->

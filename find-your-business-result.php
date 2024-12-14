@@ -95,7 +95,7 @@ require('includes/header.php'); ?>
             <td><?php echo htmlspecialchars($result['category']); ?></td>
             <td><?php echo htmlspecialchars($result['city'] . ', ' . $result['state']); ?></td>
             <?php ?>
-            <td><a href="/payment-step?business_name=<?php echo htmlspecialchars($result['business_name']); ?>&ID=<?php echo htmlspecialchars($result['id']); ?>&category=<?php echo htmlspecialchars($result['category']); ?>&state=<?php echo htmlspecialchars($result['state']); ?>&type=<?php echo $_GET['type']; ?>#form" class="btn">Select</a></td>
+            <td><a href="payment-step?business_name=<?php echo htmlspecialchars($result['business_name']); ?>&ID=<?php echo htmlspecialchars($result['id']); ?>&category=<?php echo htmlspecialchars($result['category']); ?>&state=<?php echo htmlspecialchars($result['state']); ?>&type=<?php echo $_GET['type']; ?>#form" class="btn">Select</a></td>
           </tr>
          <?php endforeach; ?>
         </tbody>

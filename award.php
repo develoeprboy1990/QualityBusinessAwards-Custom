@@ -77,7 +77,7 @@ try {
     </div>
 
     <!-- Award Display Section -->
-    <div class="rated">
+    <!-- <div class="rated">
         <div class="card">
             <div class="card-body">
                 <div class="legend">#1 BEST RATED <?php echo htmlspecialchars($award['year']); ?></div>
@@ -125,7 +125,58 @@ try {
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <div class="rated">
+          <div class="card">
+            <div class="card-body">
+              <div class="legend">#1 BEST RATED 2024</div><!--end of legend-->
+              <div class="row align-items-center">
+                <div class="col-md-3">
+                  <div class="ward_logo">
+                    <img src="/images/winner_award.svg" alt="" class="img-fluid">
+                  </div><!--end of award logo-->
+                </div><!--end col md 3-->
+                <div class="col-md-9">
+                 
+                  <div class="card">
+                    <h3>3D Domed Labels Inc</h3>
+                    <div class="card-body">
+                      <ul class="list-unstyled">
+                        <li> <img src="/images/cup.svg" alt="">3D Printing</li>
+                        <li> <img src="/images/address.svg" alt="">Ajax</li>
+                        <li> <img src="/images/address.svg" alt="">Address</li>
+                        
+                        
+                      </ul>
+                    </div><!--end of card body-->
+                  </div><!--end of card-->
+                  <p>We have awarded The Gym On Locke as The Best Gym in Hamilton for 2024. An overall quality score exceeding 95% was achieved, making them the top ranked in Hamilton</p>
+                
+                  <div class="row">
+                    <div class="col-md-8">
+                      <ul class="list-unstyled rating">
+                        <li><img src="/images/stars.svg" alt=""> <span>Satisfaction</span></li>
+                        <li><img src="/images/stars.svg" alt=""> <span>Service</span></li>
+                        <li><img src="/images/stars.svg" alt=""> <span>Reputation</span></li>
+                        <li><img src="/images/stars.svg" alt=""> <span>Quality</span></li>
+                      </ul>
+                    </div><!--end of col md 8-->
+                    <div class="col-md-4">
+                      <div class="bottom_btn">
+                        <a href="#" class="btn btn_fill">Visit Website</a>
+                        <a href="#" class="btn btn_outline">Click to verify</a>
+                      </div>
+                    </div><!--end of col md 4-->
+                  </div><!--end of row-->
+
+                 
+                
+                </div><!--end of col md 9-->
+
+              </div><!--end of row-->
+            </div><!--end of card body-->
+          </div><!--end of card-->
+        </div><!--end of rated-->
 </div>
 
 <section class="judging_pannel">
