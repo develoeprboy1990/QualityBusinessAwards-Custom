@@ -33,7 +33,338 @@ try {
         <a href="/search" class="btn">SEARCH WINNERS</a>
     </div>
 </div>
+<style>
+        /* Your existing styles remain exactly the same until the modal styles */
+        .award-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            border: 2px solid #FFB800;
+            border-radius: 15px;
+            padding: 40px;
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
 
+        .top-banner {
+            background-color: #1e54a9;
+            color: white;
+            padding: 10px 40px;
+            border-radius: 25px;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+            font-size: 1.2em;
+            white-space: nowrap;
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .award-image {
+            width: 180px;
+            height: auto;
+            padding-top: 35px;
+        }
+
+        .business-info {
+            padding-top: 0;
+        }
+
+        .business-name {
+            color: #FFB800;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .category-section {
+            background: #f8f9fa;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .category-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .detail-row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .detail-icon {
+            width: 24px;
+            height: 24px;
+            fill: #FFB800;
+        }
+
+        .category-text, .location-text {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #2c3338;
+        }
+
+        .description {
+            line-height: 1.5;
+            max-width: 600px;
+            color: #555;
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .right-section {
+            display: flex;
+            gap: 30px;
+            align-items: start;
+        }
+
+        .ratings-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 45px;
+        }
+
+        .rating-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 24px;
+        }
+
+        .stars {
+            color: #FFB800;
+            letter-spacing: 2px;
+        }
+
+        .rating-label {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 75px;
+        }
+
+        .visit-button, .verify-button {
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .visit-button {
+            background-color: #FFB800;
+            color: white;
+        }
+
+        .verify-button {
+            background-color: #f0f5ff;
+            color: #1e54a9;
+            border: 1px solid #1e54a9;
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+
+        .verify-button:hover {
+            background-color: #e6eeff;
+        }
+
+        @media (max-width: 768px) {
+            .award-container {
+                padding: 30px 20px;
+                margin: 30px 10px;
+            }
+
+            .content-wrapper {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .award-image {
+                width: 140px;
+                padding-top: 20px;
+                margin: 0 auto;
+            }
+
+            .business-name {
+                text-align: center;
+            }
+
+            .category-section {
+                text-align: center;
+            }
+
+            .detail-row {
+                justify-content: center;
+            }
+
+            .description {
+                text-align: center;
+                font-size: 0.9em;
+            }
+
+            .right-section {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .ratings-section {
+                margin-top: 20px;
+                width: 100%;
+            }
+
+            .rating-item {
+                justify-content: center;
+            }
+
+            .buttons-container {
+                margin-top: 20px;
+                width: 100%;
+            }
+
+            .top-banner {
+                font-size: 1em;
+                padding: 8px 20px;
+            }
+
+            .category-text, .location-text {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .award-container {
+                padding: 20px 15px;
+            }
+
+            .business-name {
+                font-size: 1.3em;
+            }
+
+            .category-text, .location-text {
+                font-size: 1.2rem;
+            }
+
+            .rating-label {
+                font-size: 1em;
+            }
+
+            .top-banner {
+                font-size: 0.9em;
+                padding: 6px 15px;
+            }
+        }
+
+        /* Modal Styles */
+        .verification-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .verification-content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 400px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .verification-content h3 {
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar-fill {
+            height: 20px;
+            width: 0;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .verification-content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .verification-content ul li {
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
+        .verification-content ul li:before {
+            content: '\2714\0020';
+            color: #4CAF50;
+        }
+
+        .identity-verified {
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .identity-verified img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .close-modal {
+            background-color: #f0a500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .close-modal:hover {
+            background-color: #d48806;
+        }
+    </style>
 <!-- Main Content -->
 <div class="container col-md-9">
     <div class="press_release gym award_winner">
@@ -115,7 +446,7 @@ try {
                         <?php if (!empty($award['website']) && $award['website'] !== 'NULL'): ?>
                                 <a href="<?php echo htmlspecialchars($award['website']); ?>" class="btn btn_fill" target="_blank">Visit Website</a>
                             <?php endif; ?>
-                        <a href="#" class="btn btn_outline">Click to verify</a>
+                        <a href="javascript:void(0)" class="btn btn_outline" onclick="openVerificationModal()">Click to verify</a>
                       </div>
                     </div><!--end of col md 4-->
                   </div><!--end of row-->
@@ -128,9 +459,9 @@ try {
             </div><!--end of card body-->
           </div><!--end of card-->
         </div><!--end of rated-->
-</div>
+    </div>
 
-<section class="judging_pannel">
+    <section class="judging_pannel">
         <div class="container">
           <div class="title"><h2><span>QUALITY</span> RECOGNITION</h2> <p>Representing less than 1% of registered businesses in the USA</p></div><!--end of title-->
           <div class="row">
@@ -186,5 +517,94 @@ try {
         </div><!--end of continer-->
       </section>
 
+<!-- Verification Modal -->
+    <div id="verificationModal" class="verification-modal">
+        <div class="verification-content">
+            <h3>Business Verification</h3>
+            <div class="progress-bar">
+                <div class="progress-bar-fill"></div>
+            </div>
+            <ul></ul>
+            <div class="identity-verified" style="display: none;">
+                <img id="identity-icon" alt="Status icon">
+                <strong>Business Verification Status: <span id="identity-status"></span></strong>
+            </div>
+            <button class="close-modal" onclick="closeVerificationModal()">Close</button>
+        </div>
+    </div>
 
+    <script>
+        function openVerificationModal() {
+            const businessName = <?php echo json_encode($award['business_name']); ?>;
+            const businessCategory = <?php echo json_encode($award['category']); ?>;
+            const businessLocation = <?php echo json_encode($award['city'] . ', ' . $award['state']); ?>;
+            const isVerified = <?php echo json_encode((bool)$award['verification_status']); ?>;
+            
+            document.getElementById('verificationModal').style.display = 'flex';
+            let progressBar = document.querySelector('.progress-bar-fill');
+            let progress = 0;
+            const steps = [
+                `Business Name: ${businessName}`,
+                `Category: ${businessCategory}`,
+                `Location: ${businessLocation}`,
+                'Customer Satisfaction: Excellent',
+                'Service Quality: Excellent',
+                'Reputation: Excellent',
+                'Integrity and Trustworthiness: Excellent',
+                'Checking Quality Score'
+            ];
+            let ul = document.querySelector('.verification-content ul');
+            ul.innerHTML = '';
+
+            function updateProgress() {
+                if (progress < steps.length - 1) {
+                    progressBar.style.width = ((progress + 1) / steps.length) * 100 + '%';
+                    let li = document.createElement('li');
+                    li.textContent = steps[progress];
+                    ul.appendChild(li);
+                    progress++;
+                    setTimeout(updateProgress, 1000);
+                } else if (progress === steps.length - 1) {
+                    progressBar.style.width = '100%';
+                    let li = document.createElement('li');
+                    li.textContent = steps[progress];
+                    ul.appendChild(li);
+                    progress++;
+                    let qualityScore = 0;
+                    function slideQualityScore() {
+                        if (qualityScore < 95) {
+                            qualityScore += 5;
+                            li.textContent = `Checking Quality Score: ${qualityScore}%`;
+                            setTimeout(slideQualityScore, 500);
+                        } else {
+                            li.textContent = 'Quality Score: 95%+';
+                            document.querySelector('.identity-verified').style.display = 'flex';
+                            
+                            // Set verification status based on database value
+                            if (isVerified) {
+                                document.getElementById('identity-status').textContent = 'Verified';
+                                document.getElementById('identity-icon').src = 'https://img.icons8.com/ios-filled/50/4CAF50/approval.png';
+                                document.getElementById('identity-status').style.color = '#4CAF50';
+                                document.querySelector('.identity-verified strong').style.color = '#4CAF50';
+                            } else {
+                                document.getElementById('identity-status').textContent = 'Unverified';
+                                document.getElementById('identity-icon').src = 'https://img.icons8.com/ios-filled/50/FF0000/cancel.png';
+                                document.getElementById('identity-status').style.color = '#FF0000';
+                                document.querySelector('.identity-verified strong').style.color = '#FF0000';
+                            }
+                        }
+                    }
+                    slideQualityScore();
+                }
+            }
+
+            document.querySelector('.identity-verified').style.display = 'none';
+            progressBar.style.width = '0';
+            setTimeout(updateProgress, 1000);
+        }
+
+        function closeVerificationModal() {
+            document.getElementById('verificationModal').style.display = 'none';
+        }
+    </script>
 <?php require('includes/footer.php'); ?>
