@@ -26,7 +26,7 @@ if ($term) {
         if ($type === 'city') {
             $stmt = $pdo->prepare("SELECT DISTINCT city FROM awards WHERE city ILIKE :term LIMIT 10");
         } else {
-            $stmt = $pdo->prepare("SELECT DISTINCT business_name FROM awards WHERE business_name ILIKE :term LIMIT 10");
+            $stmt = $pdo->prepare("SELECT DISTINCT business_name FROM awards WHERE business_name ILIKE :term LIMIT 30");
         }
         
         $stmt->execute([':term' => "%$term%"]);
