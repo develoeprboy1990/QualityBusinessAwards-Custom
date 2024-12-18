@@ -19,7 +19,7 @@ if ($term) {
                 state
             FROM awards 
             WHERE business_name ILIKE :term 
-            LIMIT 5
+            LIMIT 30
         ");
         $stmt->execute([':term' => "%$term%"]);
         $results['businesses'] = $stmt->fetchAll(PDO::FETCH_ASSOC);

@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
     $searchTerm = $_GET['search'];
     // Perform database query based on $searchTerm
     // Example query:
-    $stmt = $pdo->prepare("SELECT * FROM awards WHERE business_name ILIKE :term LIMIT 10");
+    $stmt = $pdo->prepare("SELECT * FROM awards WHERE business_name ILIKE :term LIMIT 30");
     $stmt->execute([':term' => "%$searchTerm%"]);
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -157,416 +157,379 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
     </div>
 </div>
 </div>
+
+
 <div class="bg">
-    <div class="container">
+    <div class="container">      
+      <!-- Alberta -->
       <div class="location_block">
         <div class="heading">
           <h2>Alberta</h2>
         </div><!--end of heading-->
         <div class="inner_cities_area">
         <ul class="list-unstyled">
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Airdrie&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Airdrie</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Calgary&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Calgary</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Edmonton&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg>Edmonton</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Grand-Prairie&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Grand Prairie</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Grande-Prairie&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Grande Prairie</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Lethbridge&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Lethbridge</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Medicine-Hat&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Medicine Hat</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Red-Deer&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Red Deer</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Sherwood-Park&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Sherwood Park</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=St.-Albert&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> St. Albert</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Strathcona-County&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Strathcona County</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Wood-Buffalo&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Wood Buffalo</a></li>
         </ul>
         <div class="more_cities">
-          <a href="#" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
+          <a href="/search" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
         </div><!--end of more cities-->
       </div><!--END OF INNER CITIES AREA-->
       </div><!--end of location block-->
 
+      <!-- British Columbia -->
       <div class="location_block">
         <div class="heading">
           <h2>British Columbia</h2>
         </div><!--end of heading-->
         <div class="inner_cities_area">
         <ul class="list-unstyled">
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Abbotsford&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Abbotsford</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Burnaby&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Burnaby</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Chilliwack&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg>Coquitlam</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Coquitlam&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Delta</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Delta&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Kamloops</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Kelowna&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Kelowna</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Langley&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Langley</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Maple-Ridge&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Maple Ridge</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Nanaimo&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Nanaimo</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=New-Westminster&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg>New Westminster</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=North-Vancouver&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg>North Vancouver</a></li>
-
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Port-Coquitlam&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Port Coquitlam</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Prince George</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Richmond</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Saanich</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Surrey</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Vancouver</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Victoria</a></li>
-
+          <li><a href="#/search?city=Prince-George&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Prince George</a></li>
+          <li><a href="/search?city=Richmond&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Richmond</a></li>
+          <li><a href="/search?city=Saanich&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Saanich</a></li>
+          <li><a href="/search?city=Surrey&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Surrey</a></li>
+          <li><a href="/search?city=Vancouver&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Vancouver</a></li>
+          <li><a href="/search?city=Victoria&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Victoria</a></li>
         </ul>
         <div class="more_cities">
-          <a href="#" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
+          <a href="/search" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
         </div><!--end of more cities-->
       </div><!--END OF INNER CITIES AREA-->
       </div><!--end of location block-->
 
+      <!-- Manitoba -->
       <div class="location_block">
         <div class="heading">
           <h2>Manitoba</h2>
         </div><!--end of heading-->
         <div class="inner_cities_area">
         <ul class="list-unstyled">
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Winnipeg&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Winnipeg</a></li>
     
         </ul>
         <div class="more_cities">
-          <a href="#" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
+          <a href="/search" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
         </div><!--end of more cities-->
       </div><!--END OF INNER CITIES AREA-->
       </div><!--end of location block-->
 
+      <!-- New Brunswick -->
       <div class="location_block">
         <div class="heading">
           <h2>New Brunswick</h2>
         </div><!--end of heading-->
         <div class="inner_cities_area">
         <ul class="list-unstyled">
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Fredericton&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Fredericton</a></li>
 
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Moncton&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Moncton</a></li>
 
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Saint-John&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Saint John</a></li>
     
         </ul>
         <div class="more_cities">
-          <a href="#" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
+          <a href="/search" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
         </div><!--end of more cities-->
       </div><!--END OF INNER CITIES AREA-->
       </div><!--end of location block-->
 
+      <!-- Newfoundland and Labrador -->
       <div class="location_block">
         <div class="heading">
           <h2>Newfoundland and Labrador</h2>
         </div><!--end of heading-->
         <div class="inner_cities_area">
         <ul class="list-unstyled">
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=St.-John's&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> St. John's</a></li>
     
         </ul>
         <div class="more_cities">
-          <a href="#" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
+          <a href="/search" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
         </div><!--end of more cities-->
       </div><!--END OF INNER CITIES AREA-->
       </div><!--end of location block-->
 
-      
+      <!-- Nova Scotia -->
       <div class="location_block">
         <div class="heading">
           <h2>Nova Scotia</h2>
         </div><!--end of heading-->
         <div class="inner_cities_area">
         <ul class="list-unstyled">
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Cape-Breton&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Cape Breton</a></li>
 
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Halifax&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Halifax</a></li>
     
         </ul>
         <div class="more_cities">
-          <a href="#" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
+          <a href="/search" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
         </div><!--end of more cities-->
       </div><!--END OF INNER CITIES AREA-->
       </div><!--end of location block-->
 
+      <!-- Ontario -->
       <div class="location_block">
         <div class="heading">
           <h2>Ontario</h2>
         </div><!--end of heading-->
         <div class="inner_cities_area">
         <ul class="list-unstyled">
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Ajax&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Ajax</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Aurora&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Aurora</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Barrie&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg>Barrie</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Belleville&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Belleville</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Bowmanville&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Bowmanville</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Brampton&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Brampton</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Brantford&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Brantford</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Burlington&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Burlington</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Caledon&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Caledon</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Cambridge&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg>Cambridge</a></li>
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Chatham-Kent&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg>Chatham-Kent</a></li>
-
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Clarington&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Clarington</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Greater Sudbury</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Guelph</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Halton Hills</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Hamilton</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Huntsville</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Kawartha Lakes</a></li>
-
-
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Kingston</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Kitchener</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> London</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Markham</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Milton</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Mississauga</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Newmarket</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Niagara Falls</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Norfolk County</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> North Bay</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Oakville</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Orangeville</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Oshawa</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Ottawa</a></li>
-
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Peterborough</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Pickering</a></li>
-      
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Richmond Hill</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Sarnia</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Sault Ste. Marie</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> St. Catharines</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Thunder Bay</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Toronto</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Vaughan</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Waterloo</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Welland</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Whitby</a></li>
-
-      <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
-      </svg> Windsor</a></li>
-
+          <li><a href="/search?city=Greater-Sudbury&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Greater Sudbury</a></li>
+          <li><a href="/search?city=Guelph&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Guelph</a></li>
+          <li><a href="/search?city=Halton-Hills&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Halton Hills</a></li>
+          <li><a href="/search?city=Hamilton&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Hamilton</a></li>
+          <li><a href="/search?city=Huntsville&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Huntsville</a></li>
+          <li><a href="/search?city=Kawartha-Lakes&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Kawartha Lakes</a></li>
+          <li><a href="/search?city=Kingston&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Kingston</a></li>
+          <li><a href="/search?city=Kitchener&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Kitchener</a></li>
+          <li><a href="/search?city=London&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> London</a></li>
+          <li><a href="/search?city=Markham&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Markham</a></li>
+          <li><a href="/search?city=Milton&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Milton</a></li>
+          <li><a href="/search?city=Mississauga&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Mississauga</a></li>
+          <li><a href="/search?city=Newmarket&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Newmarket</a></li>
+          <li><a href="/search?city=Niagara-Falls&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Niagara Falls</a></li>
+          <li><a href="/search?city=Norfolk-County&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Norfolk County</a></li>
+          <li><a href="/search?city=North-Bay&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> North Bay</a></li>
+          <li><a href="/search?city=Oakville&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Oakville</a></li>
+          <li><a href="/search?city=Orangeville&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Orangeville</a></li>
+          <li><a href="/search?city=Oshawa&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Oshawa</a></li>
+          <li><a href="/search?city=Ottawa&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Ottawa</a></li>
+          <li><a href="/search?city=Peterborough&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Peterborough</a></li>
+          <li><a href="/search?city=Pickering&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Pickering</a></li>
+          <li><a href="/search?city=Richmond-Hill&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Richmond Hill</a></li>
+          <li><a href="/search?city=Sarnia&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Sarnia</a></li>
+          <li><a href="/search?city=Sault-Ste.-Marie&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Sault Ste. Marie</a></li>
+          <li><a href="/search?city=St.-Catharines&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> St. Catharines</a></li>
+          <li><a href="/search?city=Thunder-Bay&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Thunder Bay</a></li>
+          <li><a href="/search?city=Toronto&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Toronto</a></li>
+          <li><a href="/search?city=Vaughan&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Vaughan</a></li>
+          <li><a href="/search?city=Waterloo&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Waterloo</a></li>
+          <li><a href="/search?city=Welland&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Welland</a></li>
+          <li><a href="/search?city=Whitby&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Whitby</a></li>
+          <li><a href="/search?city=Windsor&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+          </svg> Windsor</a></li>
         </ul>
         <div class="more_cities">
-          <a href="#" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
+          <a href="/search" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
         </div><!--end of more cities-->
       </div><!--END OF INNER CITIES AREA-->
       </div><!--end of location block-->
 
+      <!-- Saskatchewan -->
       <div class="location_block">
         <div class="heading">
           <h2>Saskatchewan</h2>
         </div><!--end of heading-->
         <div class="inner_cities_area">
         <ul class="list-unstyled">
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Regina&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Regina</a></li>
 
-          <li><a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Saskatoon&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Saskatoon</a></li>
     
         </ul>
         <div class="more_cities">
-          <a href="#" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
+          <a href="/search" class="btn">+77 more cities. SEE ALL <i class="fa  fa-long-arrow-right"></i></a>
         </div><!--end of more cities-->
       </div><!--END OF INNER CITIES AREA-->
       </div><!--end of location block-->

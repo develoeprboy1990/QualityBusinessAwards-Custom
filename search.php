@@ -212,7 +212,7 @@ function get_pagination_url($page) {
                 <?php if (!empty($results)): ?>
                 <?php foreach ($results as $result): ?>
                 <div class="result-card">
-                    <img src="images/2024.png" alt="2024 Winner" class="award-icon">
+                    <img src="images/<?php echo $result['year']; ?>.png" alt="2024 Winner" class="award-icon">
                     <div class="business-info">
                         <div class="business-name"><?php echo htmlspecialchars($result['business_name']); ?></div>
                         <div class="business-meta">
