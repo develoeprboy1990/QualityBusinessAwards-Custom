@@ -20,16 +20,13 @@
         <p>Canada</p>
         <div class="row mt-5">
           <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Owner First Name*">
+            <label>First Name*</label>
+            <input type="text" class="form-control" placeholder="First Name">
           </div><!--end of col md 6-->
 
           <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Owner Last Name*">
-          </div><!--end of col md 6-->
-
-          <div class="col-md-6">
-            <label>Business*</label>
-            <input type="text" class="form-control" placeholder="Business Name*">
+            <label>Last Name*</label>
+            <input type="text" class="form-control" placeholder="Last Name">
           </div><!--end of col md 6-->
 
           <div class="col-md-6">
@@ -38,62 +35,32 @@
           </div><!--end of col md 6-->
 
           <div class="col-md-6">
-            <label>Category</label>
-            <select class="form-control select2">
-              <option selected>Choose Category</option>
-              <option value="Accountants">Accountants</option>
-              <option value="Acupuncture">Acupuncture</option>
-              <option value="Air Duct Cleaning">Air Duct Cleaning</option>
-              <option value="Airport Shuttle Service">Airport Shuttle Service</option>
-              <option value="Alternative Medicine">Alternative Medicine</option>
-            </select>
+            <label>Company Name*</label>
+            <input type="text" class="form-control" placeholder="Company Name">
           </div><!--end of col md 6-->
 
           <div class="col-md-6">
-            <label>Choose Location</label>
+            <label>URL*</label>
+            <input type="text" class="form-control" placeholder="URL">
+          </div><!--end of col md 6-->
+
+          <div class="col-md-6">
+            <label>Your relation to this company</label>
             <select class="form-control select2">
-              <option selected>Choose Location</option>
-              <option value="Abbotsford, British Columbia">Abbotsford, British Columbia</option>
-              <option value="Airdrie, Alberta">Airdrie, Alberta</option>
-              <option value="Ajax, Ontario">Ajax, Ontario</option>
-              <option value="Aurora, Ontario">Aurora, Ontario</option>
-              <option value="Barrie, Ontario">Barrie, Ontario</option>
+              <option selected></option>
+              <option value="Owner">Owner</option>
+              <option value="Employee">Employee</option>
+              <option value="No Affiliation">No Affiliation</option>
             </select>
           </div><!--end of col md 6-->
 
           <div class="col-md-12">
-            <label>Business Address*</label>
-            <textarea class="form-control" placeholder="Business Address"></textarea>
+            <label>Please let us know what edit you would recommend.*</label>
+            <textarea class="form-control"></textarea>
           </div><!--end of col md 12-->
 
           <div class="col-md-12">
-            <label>URL*</label>
-            <input type="text" class="form-control" placeholder="URL">
-          </div><!--end of col md 12-->
-
-          <div class="col-md-12">
-            <label>info</label>
-            <textarea class="form-control" placeholder="Any additional info"></textarea>
-          </div><!--end of col md 12-->
-
-          <div class="col-md-12">
-            <label>Which award are you applying for?*</label>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                2024 - Current
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-               2025
-              </label>
-            </div>
-          </div><!--end of col md 12-->
-          <div class="col-md-12">
-            <p>I Understand there is a one time $35 admin fee if my application is accepted. Payable later, if accepted.</p>
-            <a href="#" class="btn">Request Consideration <i class="fa fa-angle-right"></i></a>
+            <a href="#" class="btn">Suggest Edit <i class="fa fa-angle-right"></i></a>
           </div><!--end of col md 12-->
 
         </div><!--end of row-->

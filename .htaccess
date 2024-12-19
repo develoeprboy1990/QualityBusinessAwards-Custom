@@ -44,11 +44,11 @@ RewriteRule ^find-your-business/?$ find-your-business.php [L,QSA]
 # Handle the find-your-business page
 RewriteRule ^find-your-business-result/?$ find-your-business-result.php [L,QSA]
 
-# Handle the find-your-business page
-RewriteRule ^find-your-business-result/?$ find-your-business-result.php [L,QSA]
-
 # Handle the payment-step page
 RewriteRule ^payment-step/?$ payment-step.php [L,QSA]
+
+# Handle the suggest-edit page
+RewriteRule ^suggest-edit/?$ suggest-edit.php [L,QSA]
 
 # Handle award pages with year format
 RewriteCond %{REQUEST_FILENAME} !-f
