@@ -130,7 +130,7 @@
 
 <div class="home_hero gym_lock" style="background-image: url(images/single-header.png);">
     <div class="container">
-        <p>Find The Winners of The <span>2024 Quality Business Awards</span></p>
+        <p>Find The Winners of The <span>2025 Quality Business Awards</span></p>
         <h2>QUALITY BUSINESS AWARDS</h2>
         <a href="search" class="btn">SEARCH WINNERS</a>
     </div>

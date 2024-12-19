@@ -90,7 +90,7 @@ require('includes/header.php'); ?>
         <tbody>
         <?php foreach ($results as $result): ?>
           <tr>
-            <td class="pe-0"><img src="images/2024.png" alt=""></td>
+            <td class="pe-0"><img src="images/<?php echo $result['year']; ?>.png" alt=""></td>
             <td class="ps-0"><?php echo htmlspecialchars($result['business_name']); ?></td>
             <td><?php echo htmlspecialchars($result['category']); ?></td>
             <td><?php echo htmlspecialchars($result['city'] . ', ' . $result['state']); ?></td>

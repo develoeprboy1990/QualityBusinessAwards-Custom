@@ -1,7 +1,7 @@
 <?php require('includes/header.php'); ?>
 <div class="home_hero gym_lock" style="background-image: url(images/single-header.png);">
   <div class="container">
-      <p>Find The Winners of The <span>2024 Quality Business Awards</span></p>
+      <p>Find The Winners of The <span>2025 Quality Business Awards</span></p>
       <h2>QUALITY BUSINESS AWARDS</h2>
       <a href="search" class="btn">SEARCH WINNERS</a>
   </div><!--END OF CONTAINER-->
@@ -56,7 +56,7 @@
 
               <li><svg class="h-6 w-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg> 2024 Website Listing Never Expires</li>
+            </svg> 2025 Website Listing Never Expires</li>
 
                   </ul>
                     <div class="col-md-12">

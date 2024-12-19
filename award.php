@@ -28,7 +28,7 @@ try {
 <!-- Hero Section -->
 <div class="home_hero gym_lock" style="background-image: url(/images/single-header.png);">
     <div class="container">
-        <p>Find The Winners of The <span>2024 Quality Business Awards</span></p>
+        <p>Find The Winners of The <span>2025 Quality Business Awards</span></p>
         <h2>QUALITY BUSINESS AWARDS</h2>
         <a href="/search" class="btn">SEARCH WINNERS</a>
     </div>
@@ -392,8 +392,8 @@ try {
                         <p>Our winner has been selected as the top performer in their category and location. From the whole team, we would like to congratulate them on their outstanding results.</p>
                     </div>
                     <div class="bottom_btn">
-                        <a href="#" class="btn btn_fill">Feedback</a>
-                        <a href="#" class="btn btn_outline">Scroll to see winner <svg class="arrow-icon" viewBox="0 0 24 24">
+                        <a href="/suggest-edit?id=<?php echo htmlspecialchars($award['id']); ?>&business_name=<?php echo htmlspecialchars($award['business_name']); ?>&year=<?php echo htmlspecialchars($award['year']); ?>&address=<?php echo htmlspecialchars($award['address']); ?>" class="btn btn_fill">Feedback</a>
+                        <a href="#winner" class="btn btn_outline">Scroll to see winner <svg class="arrow-icon" viewBox="0 0 24 24">
                             <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
                         </svg></a>
                     </div>
@@ -408,14 +408,14 @@ try {
     </div>
 
     <!-- Award Display Section -->
-    <div class="rated">
+    <div class="rated" id="winner">
           <div class="card">
             <div class="card-body">
               <div class="legend">#1 BEST RATED <?php echo htmlspecialchars($award['year']); ?></div><!--end of legend-->
               <div class="row align-items-center">
                 <div class="col-md-3">
                   <div class="ward_logo">
-                    <img src="/images/winner_award.svg" alt="" class="img-fluid">
+                    <img src="/images/winner_award_<?php echo htmlspecialchars($award['year']); ?>.svg" alt="" class="img-fluid">
                   </div><!--end of award logo-->
                 </div><!--end col md 3-->
                 <div class="col-md-9">
@@ -425,12 +425,12 @@ try {
                     <div class="card-body">
                       <ul class="list-unstyled">
                         <li> <img src="/images/cup.svg" alt=""><?php echo htmlspecialchars($award['category']); ?></li>
-                        <li> <img src="/images/address.svg" alt=""><?php echo htmlspecialchars($award['city']); ?></li>
+                        <li> <img src="/images/address.svg" alt=""><?php echo htmlspecialchars($award['city'] . ', ' . $award['state']); ?></li>
                         <li> <img src="/images/address.svg" alt=""><?php echo htmlspecialchars($award['address']); ?></li>
                       </ul>
                     </div><!--end of card body-->
                   </div><!--end of card-->
-                  <p>We have awarded <?php echo htmlspecialchars($award['business_name']); ?> as The Best <?php echo htmlspecialchars($award['category']); ?> in <?php echo htmlspecialchars($award['city']); ?> for <?php echo htmlspecialchars($award['year']); ?>. An overall quality score exceeding 95% was achieved, making them the top ranked in <?php echo htmlspecialchars($award['city']); ?></p>
+                  <p>Ranked as the best among <?php echo htmlspecialchars($award['city']); ?> <?php echo htmlspecialchars($award['category']); ?> businesses for <?php echo htmlspecialchars($award['year']); ?>, <?php echo htmlspecialchars($award['business_name']); ?> exceeded a quality score of 95%.</p>
                 
                   <div class="row">
                     <div class="col-md-8">
@@ -463,7 +463,7 @@ try {
 
     <section class="judging_pannel">
         <div class="container">
-          <div class="title"><h2><span>QUALITY</span> RECOGNITION</h2> <p>Representing less than 1% of registered businesses in the USA</p></div><!--end of title-->
+          <div class="title"><h2><span>QUALITY</span> RECOGNITION</h2> <p>Representing less than 1% of registered businesses in the Canada</p></div><!--end of title-->
           <div class="row">
             <div class="col-md-3">
               <div class="inner_jugdes">

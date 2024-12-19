@@ -1,7 +1,7 @@
 <?php require('includes/header.php'); ?>
 <div class="home_hero search_banner" style="background-image: url(images/header-bg.png);">
   <div class="container">
-      <p>Find The Winners of The <span>2024 Quality Business Awards</span></p>
+      <p>Find The Winners of The <span>2025 Quality Business Awards</span></p>
       <h2>QUALITY BUSINESS AWARDS</h2>
       <a href="search" class="btn">SEARCH WINNERS</a>
   </div><!--END OF CONTAINER-->
@@ -58,7 +58,7 @@
           </div><!--end of comon title-->
           <p>Proudly display your digital badge on your website, brochures, marketing materials, advertisements, and email signatures. We will email you a high-resolution version of your digital badge with your business name on it.</p>
           <div class="hightlighter">
-            <p>Let customers know you are the best in business for your local area. When you purchase our digital items, your 2024 listing on the site will stay permanent. </p>
+            <p>Let customers know you are the best in business for your local area. When you purchase our digital items, your 2025 listing on the site will stay permanent. </p>
           </div><!--end of highliter-->
           <ul class="list-unstyled">
             <li><img src="images/biz_name.svg" alt=""> Your Business Name</li>

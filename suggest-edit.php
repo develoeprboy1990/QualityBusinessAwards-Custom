@@ -10,14 +10,14 @@
 <section class="request_consi">
   <div class="container col-md-9">
   <div class="title">
-    <h2><span>REQUEST </span>CONSIDERATION</h2>
-    <p>Using our internal point scoring system, a business must have an exceptional overall quality rating to be considered for a Quality Business Award. The business must have outstanding customer reviews and reputation from more than 3 different platforms. Businesses that respond to customers questions and concerns with continued regularity will also be highly viewed upon. Businesses with exceptional records spanning over multiple years with zero to very low amount of complaints will score highly. Businesses that conduct their day to day efforts with the highest integrity and have shown a continuous trend of giving back to their local community and reducing their carbon footprint will be rewarded with a Quality Business Award. Each year we start the process from scratch and re-evaluate each business in Canada. If you feel you meet these criteria and feel you have been overlooked and would like to apply for reconsideration, please fill out the form below.</p>
+    <h2><span>SUGGEST </span>EDIT</h2>
+    <p>Please allow 5 business days for us to review this edit suggestion.</p>
   </div><!--end of title-->
 
   <div class="request_form">
     <div class="inner_form">
-        <h4>Request Consideration Canada</h4>
-        <p>Please provide all required details to request consideration. We may take up to 5 business days to review your submission.</p>
+        <h4>Suggest Edit</h4>
+        <p>Canada</p>
         <div class="row mt-5">
           <div class="col-md-6">
             <input type="text" class="form-control" placeholder="Owner First Name*">

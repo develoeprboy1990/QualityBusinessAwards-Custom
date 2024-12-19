@@ -2,7 +2,7 @@
 
 <div class="home_hero" style="background-image: url(images/single-header.png);">
 <div class="container">
-    <p>Find The Winners of The <span>2024 Quality Business Awards</span></p>
+    <p>Find The Winners of The <span>2025 Quality Business Awards</span></p>
     <h2>QUALITY BUSINESS AWARDS</h2>
     <a href="search" class="btn">SEARCH WINNERS</a>
 </div><!--END OF CONTAINER-->
@@ -19,7 +19,7 @@
     <div class="col-md-6">
       <div class="awards_block">
         <div class="award_img">
-          <img src="images/2024-badge-With-Sample.png" alt="">
+          <img src="images/2025-badge-With-Sample.png" alt="">
         </div><!--end of award img-->
         <div class="award_desc">
           <h3>Badge, Banner, Certificate</h3>
@@ -127,14 +127,14 @@
 <div class="container">
 <div class="common_title">
 <h2>Our <span>pricing</span></h2>
-<h4>All Purchases guarantee your 2024 listing will never expire.</h4>
+<h4>All Purchases guarantee your 2025 listing will never expire.</h4>
 </div><!--end of common title-->
 <div class="pricing_block">
       <div class="row">
         <div class="col-md-3">
           <div class="inner_price">
            <h6><span class="badge rounded-pill">DIGITAL ONLY</span></h6>
-           <div class="img"><img src="images/2024-badge-With-Sample.png" alt="" class="img-fluid"></div><!--end of img-->
+           <div class="img"><img src="images/2025-badge-With-Sample.png" alt="" class="img-fluid"></div><!--end of img-->
            <h2>Certificate</h2>
            <div class="card">
             <div class="card-body">

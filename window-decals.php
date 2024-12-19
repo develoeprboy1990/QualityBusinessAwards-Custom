@@ -53,7 +53,7 @@
       <div class="col-md-6 order-md-1">
         <h2>Windows Decal</h2>
         <p>Stand tall and stand out with the Quality Business Awards’ official Window Decals, a symbol of local excellence and sector leadership. These decals are designed to universally fit any storefront or office window, offering a clear and visible marker of your prestigious recognition as a standout business within your community and industry.</p>
-        <p>Our decals boast a straightforward yet impactful design that clearly states your achievement: “2024 WINNER, QUALITY RATING OVER 95%”. This message isn’t just a claim; it’s a verified testament to your status as a top-tier service provider</p>
+        <p>Our decals boast a straightforward yet impactful design that clearly states your achievement: 2025 WINNER, QUALITY RATING OVER 95%”. This message isn’t just a claim; it’s a verified testament to your status as a top-tier service provider</p>
         
         <div class="card">
           <div class="card-body">

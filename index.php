@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
 </style>
 <div class="home_hero" style="background-image: url(images/header-bg.png);">
     <div class="container">
-        <p>Find The Winners of The <span>2024 Quality Business Awards</span></p>
+        <p>Find The Winners of The <span>2025 Quality Business Awards</span></p>
         <h2>QUALITY BUSINESS AWARDS</h2>
         <a href="/search" class="btn">SEARCH WINNERS</a>
     </div>
@@ -58,31 +58,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
   </div>
   <ul class="list-unstyled">
     <li>
-      <a href="/search?city=&category=Accountants&year=2024">
+      <a href="/search?city=&category=Accountants&year=2025">
         <img src="images/accountant.png" alt="">
         <p>Accountant</p>
       </a>
     </li>
     <li>
-      <a href="/search?city=&category=Car+Dealer&year=2024">
+      <a href="/search?city=&category=Car+Dealer&year=2025">
         <img src="images/car.png" alt="">
         <p>Car Dealerships</p>
       </a>
     </li>
     <li>
-      <a href="/search?city=&category=Business+Law&year=2024">
+      <a href="/search?city=&category=Business+Law&year=2025">
         <img src="images/business.png" alt="">
         <p>Business Law</p>
       </a>
     </li>
     <li>
-      <a href="/search?city=&category=Insurance+Broker&year=2024">
+      <a href="/search?city=&category=Insurance+Broker&year=2025">
         <img src="images/insurance.png" alt="">
         <p>Insurance</p>
       </a>
     </li>
     <li>
-      <a href="/search?city=&category=Home+Cleaning&year=2024">
+      <a href="/search?city=&category=Home+Cleaning&year=2025">
         <img src="images/home-clean.png" alt="">
         <p>Home Cleaning</p>
       </a>

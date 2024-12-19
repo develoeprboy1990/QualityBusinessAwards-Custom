@@ -156,7 +156,7 @@ function get_pagination_url($page) {
 </style>
 <div class="home_hero search_banner" style="background-image: url(images/header-bg.png);">
     <div class="container">
-        <p>Find The Winners of The <span>2024 Quality Business Awards</span></p>
+        <p>Find The Winners of The <span>2025 Quality Business Awards</span></p>
         <h2>QUALITY BUSINESS AWARDS</h2>
         <a href="search" class="btn">SEARCH WINNERS</a>
     </div><!--END OF CONTAINER-->
@@ -212,7 +212,7 @@ function get_pagination_url($page) {
                 <?php if (!empty($results)): ?>
                 <?php foreach ($results as $result): ?>
                 <div class="result-card">
-                    <img src="images/<?php echo $result['year']; ?>.png" alt="2024 Winner" class="award-icon">
+                    <img src="images/<?php echo $result['year']; ?>.png" alt="<?php echo $result['year']; ?> Winner" class="award-icon">
                     <div class="business-info">
                         <div class="business-name"><?php echo htmlspecialchars($result['business_name']); ?></div>
                         <div class="business-meta">
