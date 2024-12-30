@@ -715,7 +715,7 @@
 .why_verify,
 .privacy_matters,
 .verification_cta {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 @media (max-width: 767px) {
