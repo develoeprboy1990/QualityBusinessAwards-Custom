@@ -12,6 +12,7 @@
     <link href="/css/slick.css" rel="stylesheet" />
     <link href="/css/slick-theme.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>

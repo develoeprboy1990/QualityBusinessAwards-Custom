@@ -26,7 +26,7 @@
           <p>Digital files that you can use to promote your business. This includes digital badges, banners and certificates. Great for websites, social media and email footers.</p>
           <div class="bottom_btn">
             <a href="banner-badge-certificate" class="btn btn_yellow">View Sample</a>
-            <a href="#pay" class="btn btn_green">View Price</a>
+            <a href="#Badge" class="btn btn_green">View Price</a>
           </div><!--end of bottom btn-->
         </div><!--end of award desc-->
       </div><!--end of awad block-->
@@ -60,7 +60,7 @@
           <p>Your business name and category engraved on a plaque that can be hung from a wall or placed on a desk.</p>
           <div class="bottom_btn">
             <a href="plaque" class="btn btn_yellow">View Sample</a>
-            <a href="#pay" class="btn btn_green">View Price</a>
+            <a href="#Plaque" class="btn btn_green">View Price</a>
           </div><!--end of bottom btn-->
         </div><!--end of award desc-->
       </div><!--end of awad block-->
@@ -76,7 +76,7 @@
           <p>Your business name and category engraved on a glass trophy.</p>
           <div class="bottom_btn">
             <a href="glass-trophy" class="btn btn_yellow">View Sample</a>
-            <a href="#pay" class="btn btn_green">View Price</a>
+            <a href="#Trophy" class="btn btn_green">View Price</a>
           </div><!--end of bottom btn-->
         </div><!--end of award desc-->
       </div><!--end of awad block-->
@@ -92,7 +92,7 @@
           <p>Custom press releases written about your company and category. Distributed to North American news outlets.</p>
           <div class="bottom_btn">
             <a href="press-release" class="btn btn_yellow">View Sample</a>
-            <a href="#pay" class="btn btn_green">View Price</a>
+            <a href="#Press" class="btn btn_green">View Price</a>
           </div><!--end of bottom btn-->
         </div><!--end of award desc-->
       </div><!--end of awad block-->
@@ -131,7 +131,7 @@
 </div><!--end of common title-->
 <div class="pricing_block">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" id="Badge">
           <div class="inner_price">
            <h6><span class="badge rounded-pill">DIGITAL ONLY</span></h6>
            <div class="img"><img src="images/2025-badge-With-Sample.png" alt="" class="img-fluid"></div><!--end of img-->
@@ -152,7 +152,7 @@
           </div><!--end of inner price-->
         </div><!--end of col md 3-->
 
-        <div class="col-md-3">
+        <div class="col-md-3" id="Plaque">
           <div class="inner_price">
            <h6><span class="badge rounded-pill">Require Shipping</span></h6>
            <div class="img"><img src="images/Icon1.png" alt="" class="img-fluid"></div><!--end of img-->
@@ -175,7 +175,7 @@
           </div><!--end of inner price-->
         </div><!--end of col md 3-->
 
-        <div class="col-md-3">
+        <div class="col-md-3" id="Trophy">
           <div class="inner_price">
            <h6><span class="badge rounded-pill">Require Shipping</span></h6>
            <div class="img"><img src="images/Icon2.png" alt="" class="img-fluid"></div><!--end of img-->
@@ -199,7 +199,7 @@
           </div><!--end of inner price-->
         </div><!--end of col md 3-->
 
-        <div class="col-md-3">
+        <div class="col-md-3" id="Press">
           <div class="inner_price">
            <h6><span class="badge rounded-pill">Require Shipping</span></h6>
            <div class="img"><img src="images/new.png" alt="" class="img-fluid"></div><!--end of img-->

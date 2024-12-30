@@ -1861,6 +1861,7 @@ section {
 /*----banner badge---------*/
 .banner_badge_top {
   margin-top: 70px;
+  font-family: "lato", sans-serif;
 }
 .banner_badge_top .row [class*=col-]:nth-child(1) {
   margin-right: -50px;
@@ -1945,6 +1946,7 @@ section {
 .digital_badgeDec {
   position: sticky;
   top: 120px;
+  font-family: "lato", sans-serif;
 }
 
 .awardsSample_img .img {
@@ -2463,9 +2465,10 @@ section {
   }
   .rated .card .card-body .card ul li {
     font-size: 3vw;
+    display: flex;
   }
   .rated .card .card-body .card ul li img {
-    width: 18px;
+    max-width: 18px;
     height: 18px;
   }
   .rated .rating {
@@ -2481,6 +2484,13 @@ section {
   }
   .rated .bottom_btn .btn {
     font-size: 3.2vw;
+  }
+  .glass_trophy .decal_img {
+    height: auto;
+  }
+  .glass_trophy .decal_img img {
+    object-fit: contain;
+    opacity: 1;
   }
 }
 

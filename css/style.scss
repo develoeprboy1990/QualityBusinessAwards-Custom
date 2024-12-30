@@ -1958,6 +1958,7 @@ background: linear-gradient(to right,  rgba(196,156,86,1) 1%,rgba(176,136,73,1) 
 /*----banner badge---------*/
 .banner_badge_top{
     margin-top: 70px;
+    font-family: $lato;
     .row{
         [class*="col-"]{
             &:nth-child(1){
@@ -2049,6 +2050,7 @@ background: linear-gradient(to right,  rgba(196,156,86,1) 1%,rgba(176,136,73,1) 
 .digital_badgeDec{
     position:sticky;
     top: 120px;
+    font-family: $lato;
 }
 .awardsSample_img{
     .img{
@@ -2655,8 +2657,9 @@ background: linear-gradient(to right,  rgba(196,156,86,1) 1%,rgba(176,136,73,1) 
                         padding-left: 0;
                         li{
                             font-size: 3vw;
+                            display: flex;
                             img{
-                                width: 18px;
+                                max-width: 18px;
                                 height: 18px;
                             }
                         }
@@ -2681,5 +2684,12 @@ background: linear-gradient(to right,  rgba(196,156,86,1) 1%,rgba(176,136,73,1) 
        .bottom_btn .btn{
         font-size: 3.2vw;
        }
+    }
+    .glass_trophy .decal_img {
+        height: auto;
+        img{
+            object-fit: contain;
+            opacity: 1;
+        }
     }
 }
