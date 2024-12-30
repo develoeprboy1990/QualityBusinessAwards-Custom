@@ -271,7 +271,7 @@ $(document).ready(function() {
             window.location.href = url;
         }else if (type === 'business') {
             const businessData = $(this).closest('.autocomplete-suggestion').data('business');
-            const url = `/payment-step?business_name=${encodeURIComponent(businessData.text)}&ID=${encodeURIComponent(businessData.id)}&category=${encodeURIComponent(businessData.category)}&state=${encodeURIComponent(businessData.state)}&type=${encodeURIComponent(currentType)}#form`;
+            const url = `/payment-step?business_name=${encodeURIComponent(businessData.text)}&id=${encodeURIComponent(businessData.id)}&category=${encodeURIComponent(businessData.category)}&state=${encodeURIComponent(businessData.state)}&type=${encodeURIComponent(currentType)}#form`;
             window.location.href = url;
         } 
         suggestionsBox.empty();

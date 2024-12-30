@@ -172,7 +172,7 @@
 
 </section>
 <div class="order_now text-center">
-  <a href="#" class="btn">Order Now</a>
+  <a href="/commemorate" class="btn">Order Now</a>
 </div><!--end of order now-->
 
 <?php require('includes/footer.php'); ?>

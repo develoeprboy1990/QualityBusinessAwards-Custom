@@ -12,7 +12,7 @@
   
 
         <div class="bottom_btn">
-          <a href="#" class="btn btn_fill">Order Now</a>
+          <a href="/commemorate" class="btn btn_fill">Order Now</a>
         </div><!--end of bottom btn-->
       </div><!--end of glass trophy desc-->
       </div><!--end of col md 6-->
