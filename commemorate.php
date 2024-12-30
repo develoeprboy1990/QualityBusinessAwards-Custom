@@ -4,7 +4,7 @@
 <div class="container">
     <p>Find The Winners of The <span>2025 Quality Business Awards</span></p>
     <h2>QUALITY BUSINESS AWARDS</h2>
-    <a href="search" class="btn">SEARCH WINNERS</a>
+    <a href="/search" class="btn">SEARCH WINNERS</a>
 </div><!--END OF CONTAINER-->
 </div><!--END OF HOME HERO-->
 
@@ -25,7 +25,7 @@
           <h3>Badge, Banner, Certificate</h3>
           <p>Digital files that you can use to promote your business. This includes digital badges, banners and certificates. Great for websites, social media and email footers.</p>
           <div class="bottom_btn">
-            <a href="banner-badge-certificate" class="btn btn_yellow">View Sample</a>
+            <a href="/banner-badge-certificate" class="btn btn_yellow">View Sample</a>
             <a href="#Badge" class="btn btn_green">View Price</a>
           </div><!--end of bottom btn-->
         </div><!--end of award desc-->
@@ -43,7 +43,7 @@
 
             This includes Shop windows, door, and cars.</p>
           <div class="bottom_btn">
-            <a href="window-decals" class="btn btn_yellow">View Sample</a>
+            <a href="/window-decals" class="btn btn_yellow">View Sample</a>
             <a href="#pay" class="btn btn_green">View Price</a>
           </div><!--end of bottom btn-->
         </div><!--end of award desc-->
@@ -59,7 +59,7 @@
           <h3>Plaque</h3>
           <p>Your business name and category engraved on a plaque that can be hung from a wall or placed on a desk.</p>
           <div class="bottom_btn">
-            <a href="plaque" class="btn btn_yellow">View Sample</a>
+            <a href="/plaque" class="btn btn_yellow">View Sample</a>
             <a href="#Plaque" class="btn btn_green">View Price</a>
           </div><!--end of bottom btn-->
         </div><!--end of award desc-->
@@ -75,7 +75,7 @@
           <h3>Glass Trophy</h3>
           <p>Your business name and category engraved on a glass trophy.</p>
           <div class="bottom_btn">
-            <a href="glass-trophy" class="btn btn_yellow">View Sample</a>
+            <a href="/glass-trophy" class="btn btn_yellow">View Sample</a>
             <a href="#Trophy" class="btn btn_green">View Price</a>
           </div><!--end of bottom btn-->
         </div><!--end of award desc-->
@@ -85,18 +85,59 @@
     <div class="col-md-6">
       <div class="awards_block">
         <div class="award_img">
-          <img src="images/Icon3.png" alt="">
+          <img src="images/new.png" alt="">
         </div><!--end of award img-->
         <div class="award_desc">
           <h3>Press Release</h3>
           <p>Custom press releases written about your company and category. Distributed to North American news outlets.</p>
           <div class="bottom_btn">
-            <a href="press-release" class="btn btn_yellow">View Sample</a>
+            <a href="/press-release" class="btn btn_yellow">View Sample</a>
             <a href="#Press" class="btn btn_green">View Price</a>
           </div><!--end of bottom btn-->
         </div><!--end of award desc-->
       </div><!--end of awad block-->
     </div><!--end of col md 6-->
+
+
+    <div class="col-md-6">
+      <div class="awards_block" style="background-color: #FFF3E0;">
+        <div class="award_img">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+          <!-- Outer circle (representing the verification badge) -->
+          <circle cx="100" cy="100" r="90" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="2"/>
+
+          <!-- Shield shape -->
+          <path d="M100 40 L140 60 L140 110 C140 140 100 160 100 160 C100 160 60 140 60 110 L60 60 Z" 
+          fill="#FFA500" stroke="#FF8C00" stroke-width="2"/>
+
+          <!-- Checkmark inside shield -->
+          <path d="M85 105 L95 115 L115 85" 
+          fill="none" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- Floating verification seal replacing mouse cursor -->
+          <circle cx="155" cy="55" r="15" fill="#ffffff" stroke="#FFA500" stroke-width="1.5"/>
+
+          <!-- Small checkmark in seal -->
+          <path d="M148 55 L153 60 L162 48" 
+          fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- Animated pulse circle (kept from original) -->
+          <circle cx="155" cy="55" r="15" fill="none" stroke="#FFA500" stroke-width="2">
+          <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          </svg>
+        </div><!--end of award img-->
+        <div class="award_desc">
+          <h3>Instant Verification Included</h3>
+          <p>Every purchase updates your listing to show as verified when potential customers click "Click to Verify." Build trust effortlessly.</p>
+          <div class="bottom_btn">
+            <a href="/verification-process" class="btn btn_yellow">LEARN MORE</a>
+          </div><!--end of bottom btn-->
+        </div><!--end of award desc-->
+      </div><!--end of awad block-->
+    </div><!--end of col md 6-->
+
 
   </div><!--end of row-->
 
@@ -218,7 +259,7 @@
             <li>Window Decal (Shipped) <a href="/window-decals">View Detail</a></li>
             <li>Plaque (Shipped) <a href="/plaque">View Detail</a></li>
             <li>Trophy (Shipped) <a href="/glass-trophy">View Detail</a></li>
-            <li>Press Release Written About Your Award <a href="/press-release">View Detail</a</li>
+            <li>Press Release Written About Your Award <a href="/press-release">View Detail</a></li>
             <li>Press release published on Digital Journal, Market Watch, ABnewswire, and Google news</li>
             <li>Home Page Website Featured Listing (12 months)</li>
            </ul>

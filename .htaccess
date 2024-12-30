@@ -50,6 +50,12 @@ RewriteRule ^payment-step/?$ payment-step.php [L,QSA]
 # Handle the suggest-edit page
 RewriteRule ^suggest-edit/?$ suggest-edit.php [L,QSA]
 
+# Handle the verification-process page
+RewriteRule ^verification-process/?$ verification-process.php [L,QSA]
+
+# Handle the verification-form page
+RewriteRule ^verification-form/?$ verification-form.php [L,QSA]
+
 # Handle award pages with year format
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
