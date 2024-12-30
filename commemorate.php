@@ -102,31 +102,8 @@
     <div class="col-md-6">
       <div class="awards_block" style="background-color: #FFF3E0;">
         <div class="award_img">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-          <!-- Outer circle (representing the verification badge) -->
-          <circle cx="100" cy="100" r="90" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="2"/>
-
-          <!-- Shield shape -->
-          <path d="M100 40 L140 60 L140 110 C140 140 100 160 100 160 C100 160 60 140 60 110 L60 60 Z" 
-          fill="#FFA500" stroke="#FF8C00" stroke-width="2"/>
-
-          <!-- Checkmark inside shield -->
-          <path d="M85 105 L95 115 L115 85" 
-          fill="none" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-
-          <!-- Floating verification seal replacing mouse cursor -->
-          <circle cx="155" cy="55" r="15" fill="#ffffff" stroke="#FFA500" stroke-width="1.5"/>
-
-          <!-- Small checkmark in seal -->
-          <path d="M148 55 L153 60 L162 48" 
-          fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-
-          <!-- Animated pulse circle (kept from original) -->
-          <circle cx="155" cy="55" r="15" fill="none" stroke="#FFA500" stroke-width="2">
-          <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
-          </circle>
-          </svg>
+          <img src="images/verification-icon.svg" alt="">
+          
         </div><!--end of award img-->
         <div class="award_desc">
           <h3>Instant Verification Included</h3>
