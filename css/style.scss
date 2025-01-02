@@ -722,6 +722,9 @@ section{
                 display: inline-block;
                 height: 180px;
                 width: 180px;
+                &[src="images/2025-badge-With-Sample.png"]{
+                    height: auto;
+                }
             }
         } 
         .award_desc{
@@ -1350,7 +1353,7 @@ section{
                     border: 1px solid rgba(255, 165, 0, 0.2);
                     color: #2c3338;
                     &:hover{
-                        background: &yellow;
+                        background: $yellow;
                     }
                 }
             }
@@ -2475,8 +2478,12 @@ background: linear-gradient(to right,  rgba(196,156,86,1) 1%,rgba(176,136,73,1) 
             margin-bottom: 25px;
         }
     }
-    .decal_wrraper .decal_desc p{
-        font-size: 14px;
+    .decal_wrraper .decal_desc{
+        padding-top: 5px;
+        p{
+            font-size: 14px;
+            line-height: 25px;
+        }
     }
     .new_plaque .decal_img{
         margin-top: 30px;
@@ -2691,5 +2698,13 @@ background: linear-gradient(to right,  rgba(196,156,86,1) 1%,rgba(176,136,73,1) 
             object-fit: contain;
             opacity: 1;
         }
+    }
+    .new_plaque{
+        .decal_img{
+            height: auto;
+        }
+    }
+    .navbar .navbar-nav {
+        gap: 4px;
     }
 }

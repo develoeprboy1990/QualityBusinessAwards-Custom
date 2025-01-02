@@ -716,6 +716,9 @@ section {
   height: 180px;
   width: 180px;
 }
+.awards .awards_block .award_img img[src="images/2025-badge-With-Sample.png"] {
+  height: auto;
+}
 .awards .awards_block .award_desc {
   padding: 10px;
   font-family: "lato", sans-serif;
@@ -1068,8 +1071,10 @@ section {
 .decal_img img {
   height: 15rem;
   width: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .decal_img .mask {
   position: absolute;
@@ -1092,8 +1097,10 @@ section {
   margin-bottom: 25px;
 }
 .decal_img.large img {
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   height: 28rem;
   width: 100%;
 }
@@ -1126,7 +1133,8 @@ section {
 .new_plaque .decal_img img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .glass_trophy [class*=col-] {
@@ -1139,7 +1147,8 @@ section {
 .glass_trophy .decal_img img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .glass_trophy .glass_tropy_desc {
   position: sticky;
@@ -1158,10 +1167,12 @@ section {
 }
 .press_release .pressImg img {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .press_release.gym .pressImg img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 90%;
   display: block;
   margin: 0 auto;
@@ -1299,7 +1310,7 @@ section {
   color: #2c3338;
 }
 .press_release.award_winner .bottom_btn .btn.btn_outline:hover {
-  background: .press_release.award_winner .bottom_btn .btn.btn_outline:hover yellow;
+  background: #ffa801;
 }
 
 @keyframes bounceArrow {
@@ -1508,7 +1519,8 @@ section {
   width: 60px;
   height: 60px;
   margin-right: 1.5rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .search_result .result-card .business-info {
   flex-grow: 1;
@@ -1653,7 +1665,8 @@ section {
   font-family: "lato", sans-serif;
   font-size: 14px;
   border-bottom: 1px solid transparent; /* Make the border transparent initially */
-  border-image: linear-gradient(to right, rgb(196, 156, 86) 1%, rgb(176, 136, 73) 9%, rgb(246, 227, 160) 22%, rgb(250, 245, 217) 36%, rgb(196, 156, 86) 46%, rgb(145, 93, 56) 59%, rgb(196, 156, 86) 75%, rgb(250, 245, 217) 89%, rgb(196, 156, 86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -o-border-image: linear-gradient(to right, rgb(196, 156, 86) 1%, rgb(176, 136, 73) 9%, rgb(246, 227, 160) 22%, rgb(250, 245, 217) 36%, rgb(196, 156, 86) 46%, rgb(145, 93, 56) 59%, rgb(196, 156, 86) 75%, rgb(250, 245, 217) 89%, rgb(196, 156, 86) 100%);
+     border-image: linear-gradient(to right, rgb(196, 156, 86) 1%, rgb(176, 136, 73) 9%, rgb(246, 227, 160) 22%, rgb(250, 245, 217) 36%, rgb(196, 156, 86) 46%, rgb(145, 93, 56) 59%, rgb(196, 156, 86) 75%, rgb(250, 245, 217) 89%, rgb(196, 156, 86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   border-image-slice: 1; /* Slice the border image to fit */
   padding-bottom: 5px;
 }
@@ -2323,8 +2336,12 @@ section {
   .glass_trophy .glass_tropy_desc {
     margin-bottom: 25px;
   }
+  .decal_wrraper .decal_desc {
+    padding-top: 5px;
+  }
   .decal_wrraper .decal_desc p {
     font-size: 14px;
+    line-height: 25px;
   }
   .new_plaque .decal_img {
     margin-top: 30px;
@@ -2489,9 +2506,14 @@ section {
     height: auto;
   }
   .glass_trophy .decal_img img {
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     opacity: 1;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+  .new_plaque .decal_img {
+    height: auto;
+  }
+  .navbar .navbar-nav {
+    gap: 4px;
+  }
+}/*# sourceMappingURL=style.css.map */

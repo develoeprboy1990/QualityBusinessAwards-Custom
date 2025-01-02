@@ -207,54 +207,54 @@
       <div class="col-md-10">
         <div class="verification_comparison">
           <div class="row g-4">
-            <div class="col-md-4">
-              <div class="comparison_card">
-                <div class="card-header">
-                  <h3>Purchase an Award</h3>
-                  <p class="price">Starting at $55</p>
-                </div>
-                <div class="card-body">
-                  <ul class="features">
-                    <li>Digital Badge & Certificate</li>
-                    <li>Instant Verification</li>
-                    <li>Permanent Listing</li>
-                  </ul>
-                  <a href="/commemorate" class="btn btn-primary w-100">View Awards</a>
-                </div>
+              <div class="col-md-4">
+                  <div class="comparison_card highlight">
+                      <div class="card-header">
+                          <h3>Purchase an Award</h3>
+                          <p class="price">Starting at $55</p>
+                      </div>
+                      <div class="card-body">
+                          <ul class="features">
+                              <li>Digital Badge & Certificate</li>
+                              <li>Instant Verification</li>
+                              <li>Permanent Listing</li>
+                          </ul>
+                          <a href="/commemorate" class="btn btn-primary w-100">View Awards</a>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="comparison_card highlight">
-                <div class="card-header">
-                  <h3>Instant Verification</h3>
-                  <p class="price">$5</p>
-                </div>
-                <div class="card-body">
-                  <ul class="features">
-                    <li>Quick & Simple</li>
-                    <li>Instant Approval</li>
-                    <li>Verified Status Only</li>
-                  </ul>
-                  <a href="/find-your-business?type=5#form" class="btn btn-success w-100">Get Verified Now</a>
-                </div>
+              <div class="col-md-4">
+                  <div class="comparison_card">
+                      <div class="card-header">
+                          <h3>Instant Verification</h3>
+                          <p class="price">$5</p>
+                      </div>
+                      <div class="card-body">
+                          <ul class="features">
+                              <li>Quick & Simple</li>
+                              <li>Instant Approval</li>
+                              <li>Verified Status Only</li>
+                          </ul>
+                          <a href="/find-your-business?type=5#form" class="btn btn-success w-100">Get Verified Now</a>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="comparison_card">
-                <div class="card-header">
-                  <h3>Manual Verification</h3>
-                  <p class="price">Free</p>
-                </div>
-                <div class="card-body">
-                  <ul class="features">
-                    <li>3-4 Month Wait Time</li>
-                    <li>Manual Review Process</li>
-                    <li>No Cost Option</li>
-                  </ul>
-                  <a href="/verification-form" class="btn btn-outline-primary w-100">Apply Now</a>
-                </div>
+              <div class="col-md-4">
+                  <div class="comparison_card">
+                      <div class="card-header">
+                          <h3>Manual Verification</h3>
+                          <p class="price">Free</p>
+                      </div>
+                      <div class="card-body">
+                          <ul class="features">
+                              <li>3-4 Month Wait Time</li>
+                              <li>Manual Review Process</li>
+                              <li>No Cost Option</li>
+                          </ul>
+                          <a href="/verification-form" class="btn btn-outline-primary w-100">Apply Now</a>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
@@ -534,6 +534,8 @@
 .comparison_card.highlight {
     border: 2px solid #FFA500;
     position: relative;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(255,165,0,0.15);
 }
 
 .comparison_card.highlight::before {
@@ -590,10 +592,11 @@
 }
 
 .comparison_card .features li:before {
-    content: '✓';
-    color: #28a745;
+    content: '•';
+    color: #FFA500;
     margin-right: 10px;
     font-weight: bold;
+    font-size: 1.2em; 
 }
 
 /* Responsive adjustments */
