@@ -2091,6 +2091,14 @@ section {
   font-family: "Lato", Sans-serif;
 }
 
+.verification_process, .why_verify, .privacy_matters, .verification_cta {
+  font-family: "lato", sans-serif;
+}
+
+.verification_card {
+  height: 100%;
+}
+
 @media screen and (max-width: 992px) {
   html, body {
     overflow-x: hidden;
@@ -2487,6 +2495,10 @@ section {
   .rated .card .card-body .card ul li img {
     max-width: 18px;
     height: 18px;
+  }
+  .rated .card .card-body .card ul li:last-child {
+    max-width: 100%;
+    flex: 0 0 100%;
   }
   .rated .rating {
     margin-bottom: 15px;

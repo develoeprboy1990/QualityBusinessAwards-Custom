@@ -2181,6 +2181,12 @@ background: linear-gradient(to right,  rgba(196,156,86,1) 1%,rgba(176,136,73,1) 
         }
     }
 }
+.verification_process, .why_verify, .privacy_matters, .verification_cta {
+    font-family: $lato;
+}
+.verification_card{
+    height: 100%;
+}
 @media screen and (max-width:992px){
     html, body {
         overflow-x: hidden;
@@ -2668,6 +2674,10 @@ background: linear-gradient(to right,  rgba(196,156,86,1) 1%,rgba(176,136,73,1) 
                             img{
                                 max-width: 18px;
                                 height: 18px;
+                            }
+                            &:last-child{
+                                max-width: 100%;
+                                flex: 0 0 100%;
                             }
                         }
                     }

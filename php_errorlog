@@ -1024,3 +1024,59 @@ Stack trace:
 [01-Jan-2025 14:16:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
 [02-Jan-2025 09:34:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
 [02-Jan-2025 09:34:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[03-Jan-2025 13:39:34 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[03-Jan-2025 13:39:34 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[03-Jan-2025 13:51:37 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[03-Jan-2025 13:51:37 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[03-Jan-2025 14:04:23 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[03-Jan-2025 14:04:23 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[03-Jan-2025 14:04:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[03-Jan-2025 14:04:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[03-Jan-2025 14:05:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[03-Jan-2025 14:05:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[03-Jan-2025 14:05:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "i" in /home/customer/www/adriand138.sg-host.com/public_html/search.php:248
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adriand138.sg-host.com/public_html/search.php on line 248
+[03-Jan-2025 14:05:40 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "i" in /home/customer/www/adriand138.sg-host.com/public_html/search.php:248
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adriand138.sg-host.com/public_html/search.php on line 248
+[03-Jan-2025 14:06:38 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "i" in /home/customer/www/adriand138.sg-host.com/public_html/search.php:248
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adriand138.sg-host.com/public_html/search.php on line 248
+[03-Jan-2025 14:06:56 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "i" in /home/customer/www/adriand138.sg-host.com/public_html/search.php:248
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adriand138.sg-host.com/public_html/search.php on line 248
+[03-Jan-2025 14:08:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "i" in /home/customer/www/adriand138.sg-host.com/public_html/search.php:248
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adriand138.sg-host.com/public_html/search.php on line 248
+[04-Jan-2025 07:33:16 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[04-Jan-2025 07:33:16 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[04-Jan-2025 07:33:26 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[04-Jan-2025 07:33:26 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[04-Jan-2025 07:33:35 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[04-Jan-2025 07:33:35 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[06-Jan-2025 09:57:12 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[06-Jan-2025 09:57:12 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[06-Jan-2025 09:57:37 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[06-Jan-2025 09:57:37 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[06-Jan-2025 10:01:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[06-Jan-2025 10:01:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[06-Jan-2025 10:16:51 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[06-Jan-2025 10:16:51 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[06-Jan-2025 10:16:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[06-Jan-2025 10:16:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[06-Jan-2025 10:17:43 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[06-Jan-2025 10:17:43 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[06-Jan-2025 16:06:31 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[06-Jan-2025 16:06:31 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[07-Jan-2025 17:32:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[07-Jan-2025 17:32:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[07-Jan-2025 17:33:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[07-Jan-2025 17:33:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
+[07-Jan-2025 17:33:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 122
+[07-Jan-2025 17:33:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/adriand138.sg-host.com/public_html/index.php on line 150
