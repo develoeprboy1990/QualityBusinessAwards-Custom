@@ -254,7 +254,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
           <li><a href="/search?city=Port-Coquitlam&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
       </svg> Port Coquitlam</a></li>
-          <li><a href="#/search?city=Prince-George&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <li><a href="/search?city=Prince-George&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
           </svg> Prince George</a></li>
           <li><a href="/search?city=Richmond&category=#results"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

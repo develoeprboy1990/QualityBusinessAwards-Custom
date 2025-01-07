@@ -162,6 +162,7 @@
            </div><!--end of card-->
 
            <ul class="list-unstyled">
+            <li>Instant Verification <a href="/verification-process">View Detail</a></li>
             <li>Digital Certificate (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
             <li>Digital Badge (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
             <li>Digital Banner (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
@@ -183,6 +184,7 @@
            </div><!--end of card-->
 
            <ul class="list-unstyled">
+            <li>Instant Verification <a href="/verification-process">View Detail</a></li>
             <li>Digital Certificate (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
             <li>Digital Badge (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
             <li>Digital Banner (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
@@ -206,6 +208,7 @@
            </div><!--end of card-->
 
            <ul class="list-unstyled">
+            <li>Instant Verification <a href="/verification-process">View Detail</a></li>
             <li>Digital Certificate (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
             <li>Digital Badge (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
             <li>Digital Banner (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
@@ -230,6 +233,7 @@
            </div><!--end of card-->
 
            <ul class="list-unstyled">
+            <li>Instant Verification <a href="/verification-process">View Detail</a></li>
             <li>Digital Certificate (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
             <li>Digital Badge (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
             <li>Digital Banner (Emailed) <a href="/banner-badge-certificate">View Detail</a></li>
