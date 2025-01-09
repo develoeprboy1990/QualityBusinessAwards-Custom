@@ -2,10 +2,10 @@
         <div class="container col-md-9">
             <div class="top_area">
               <div class="row align-items-center">
-                <div class="col-md-2"><img src="images/qba-award-1024x938.png" alt="" class="img-fluid"></div><!--end of col md 2-->
+                <div class="col-md-2"><img src="/images/qba-award-1024x938.png" alt="" class="img-fluid"></div><!--end of col md 2-->
                 <div class="col-md-5">
                   <div class="email">
-                   <span><img src="images/email-icon.png" alt=""></span>
+                   <span><img src="/images/email-icon.png" alt=""></span>
                    <h3>Email : <small>support@qualitybusinessawards.ca</small></h3>
                   </div><!--end of email-->
                 </div><!--end of col md 5-->

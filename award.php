@@ -365,100 +365,100 @@ try {
             background-color: #d48806;
         }
     </style>
-<!-- Main Content -->
-<div class="container col-md-9">
-    <div class="press_release gym award_winner">
-        <div class="row">
-            
-            <div class="col-md-7">
-                <div class="press_desc">
-                    <div class="common_title">
-                        <p>Winner For The Best</p>
-                        <div class="card">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li><svg class="detail-icon" viewBox="0 0 24 24">
-                                        <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM7 10.82C5.84 10.4 5 9.3 5 8V7h2v3.82zM19 8c0 1.3-.84 2.4-2 2.82V7h2v1z"></path>
-                                    </svg> <?php echo htmlspecialchars($award['category']); ?></li>
-                                    <li><svg class="detail-icon" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"></path>
-                                    </svg> <?php echo htmlspecialchars($award['city']); ?></li>
-                                </ul>
+    <!-- Main Content -->
+    <div class="container col-md-9">
+        <div class="press_release gym award_winner">
+            <div class="row">
+                
+                <div class="col-md-7">
+                    <div class="press_desc">
+                        <div class="common_title">
+                            <p>Winner For The Best</p>
+                            <div class="card">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li><svg class="detail-icon" viewBox="0 0 24 24">
+                                            <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM7 10.82C5.84 10.4 5 9.3 5 8V7h2v3.82zM19 8c0 1.3-.84 2.4-2 2.82V7h2v1z"></path>
+                                        </svg> <?php echo htmlspecialchars($award['category']); ?></li>
+                                        <li><svg class="detail-icon" viewBox="0 0 24 24">
+                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"></path>
+                                        </svg> <?php echo htmlspecialchars($award['city']); ?></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <p>The Quality Business Awards recognizes businesses that achieve an average quality score of 95% or greater over the previous 12 months. To learn more about our selection criteria, please <a href="/about-us">click here.</a></p>
-                    <div class="highlighter">
-                        <p>Our winner has been selected as the top performer in their category and location. From the whole team, we would like to congratulate them on their outstanding results.</p>
-                    </div>
-                    <div class="bottom_btn">
-                        <a href="/suggest-edit?id=<?php echo htmlspecialchars($award['id']); ?>&business_name=<?php echo htmlspecialchars($award['business_name']); ?>&year=<?php echo htmlspecialchars($award['year']); ?>&address=<?php echo htmlspecialchars($award['address']); ?>" class="btn btn_fill">Feedback</a>
-                        <a href="#winner" class="btn btn_outline">Scroll to see winner <svg class="arrow-icon" viewBox="0 0 24 24">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                        </svg></a>
+                        <p>The Quality Business Awards recognizes businesses that achieve an average quality score of 95% or greater over the previous 12 months. To learn more about our selection criteria, please <a href="/about-us">click here.</a></p>
+                        <div class="highlighter">
+                            <p>Our winner has been selected as the top performer in their category and location. From the whole team, we would like to congratulate them on their outstanding results.</p>
+                        </div>
+                        <div class="bottom_btn">
+                            <a href="/suggest-edit?id=<?php echo htmlspecialchars($award['id']); ?>&business_name=<?php echo htmlspecialchars($award['business_name']); ?>&year=<?php echo htmlspecialchars($award['year']); ?>&address=<?php echo htmlspecialchars($award['address']); ?>" class="btn btn_fill">Feedback</a>
+                            <a href="#winner" class="btn btn_outline">Scroll to see winner <svg class="arrow-icon" viewBox="0 0 24 24">
+                                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                            </svg></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-5">
-                <div class="pressImg">
-                    <img src="/images/Design-<?php echo htmlspecialchars($award['year']); ?>.jpg" alt="" class="img-fluid">
+                <div class="col-md-5">
+                    <div class="pressImg">
+                        <img src="/images/Design-<?php echo htmlspecialchars($award['year']); ?>.jpg" alt="" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Award Display Section -->
-    <div class="rated" id="winner">
-          <div class="card">
-            <div class="card-body">
-              <div class="legend">#1 BEST RATED <?php echo htmlspecialchars($award['year']); ?></div><!--end of legend-->
-              <div class="row align-items-center">
-                <div class="col-md-3">
-                  <div class="ward_logo">
-                    <img src="/images/winner_award_<?php echo htmlspecialchars($award['year']); ?>.svg" alt="" class="img-fluid">
-                  </div><!--end of award logo-->
-                </div><!--end col md 3-->
-                <div class="col-md-9">
-                 
-                  <div class="card">
-                    <h3><?php echo htmlspecialchars($award['business_name']); ?></h3>
-                    <div class="card-body">
-                      <ul class="list-unstyled">
-                        <li> <img src="/images/cup.svg" alt=""><?php echo htmlspecialchars($award['category']); ?></li>
-                        <li> <img src="/images/address.svg" alt=""><?php echo htmlspecialchars($award['city'] . ', ' . $award['state']); ?></li>
-                        <li> <img src="/images/address.svg" alt=""><?php echo htmlspecialchars($award['address']); ?></li>
-                      </ul>
-                    </div><!--end of card body-->
-                  </div><!--end of card-->
-                  <p>Ranked as the best among <?php echo htmlspecialchars($award['city']); ?> <?php echo htmlspecialchars($award['category']); ?> businesses for <?php echo htmlspecialchars($award['year']); ?>, <?php echo htmlspecialchars($award['business_name']); ?> exceeded a quality score of 95%.</p>
-                
-                  <div class="row">
-                    <div class="col-md-8">
-                      <ul class="list-unstyled rating">
-                        <li><img src="/images/stars.svg" alt=""> <span>Satisfaction</span></li>
-                        <li><img src="/images/stars.svg" alt=""> <span>Service</span></li>
-                        <li><img src="/images/stars.svg" alt=""> <span>Reputation</span></li>
-                        <li><img src="/images/stars.svg" alt=""> <span>Quality</span></li>
-                      </ul>
-                    </div><!--end of col md 8-->
-                    <div class="col-md-4">
-                      <div class="bottom_btn">
-                        <?php if (!empty($award['website']) && $award['website'] !== 'NULL'): ?>
-                                <a href="<?php echo htmlspecialchars($award['website']); ?>" class="btn btn_fill" target="_blank">Visit Website</a>
-                            <?php endif; ?>
-                        <a href="javascript:void(0)" class="btn btn_outline" onclick="openVerificationModal()">Click to verify</a>
-                      </div>
-                    </div><!--end of col md 4-->
+        <!-- Award Display Section -->
+        <div class="rated" id="winner">
+              <div class="card">
+                <div class="card-body">
+                  <div class="legend">#1 BEST RATED <?php echo htmlspecialchars($award['year']); ?></div><!--end of legend-->
+                  <div class="row align-items-center">
+                    <div class="col-md-3">
+                      <div class="ward_logo">
+                        <img src="/images/winner_award_<?php echo htmlspecialchars($award['year']); ?>.svg" alt="" class="img-fluid">
+                      </div><!--end of award logo-->
+                    </div><!--end col md 3-->
+                    <div class="col-md-9">
+                     
+                      <div class="card">
+                        <h3><?php echo htmlspecialchars($award['business_name']); ?></h3>
+                        <div class="card-body">
+                          <ul class="list-unstyled">
+                            <li> <img src="/images/cup.svg" alt=""><?php echo htmlspecialchars($award['category']); ?></li>
+                            <li> <img src="/images/address.svg" alt=""><?php echo htmlspecialchars($award['city'] . ', ' . $award['state']); ?></li>
+                            <li> <img src="/images/address.svg" alt=""><?php echo htmlspecialchars($award['address']); ?></li>
+                          </ul>
+                        </div><!--end of card body-->
+                      </div><!--end of card-->
+                      <p>Ranked as the best among <?php echo htmlspecialchars($award['city']); ?> <?php echo htmlspecialchars($award['category']); ?> businesses for <?php echo htmlspecialchars($award['year']); ?>, <?php echo htmlspecialchars($award['business_name']); ?> exceeded a quality score of 95%.</p>
+                    
+                      <div class="row">
+                        <div class="col-md-8">
+                          <ul class="list-unstyled rating">
+                            <li><img src="/images/stars.svg" alt=""> <span>Satisfaction</span></li>
+                            <li><img src="/images/stars.svg" alt=""> <span>Service</span></li>
+                            <li><img src="/images/stars.svg" alt=""> <span>Reputation</span></li>
+                            <li><img src="/images/stars.svg" alt=""> <span>Quality</span></li>
+                          </ul>
+                        </div><!--end of col md 8-->
+                        <div class="col-md-4">
+                          <div class="bottom_btn">
+                            <?php if (!empty($award['website']) && $award['website'] !== 'NULL'): ?>
+                                    <a href="<?php echo htmlspecialchars($award['website']); ?>" class="btn btn_fill" target="_blank">Visit Website</a>
+                                <?php endif; ?>
+                            <a href="javascript:void(0)" class="btn btn_outline" onclick="openVerificationModal()">Click to verify</a>
+                          </div>
+                        </div><!--end of col md 4-->
+                      </div><!--end of row-->
+
+                     
+                    
+                    </div><!--end of col md 9-->
+
                   </div><!--end of row-->
-
-                 
-                
-                </div><!--end of col md 9-->
-
-              </div><!--end of row-->
-            </div><!--end of card body-->
-          </div><!--end of card-->
-        </div><!--end of rated-->
+                </div><!--end of card body-->
+              </div><!--end of card-->
+            </div><!--end of rated-->
     </div>
 
     <section class="judging_pannel">
@@ -517,7 +517,7 @@ try {
         </div><!--end of continer-->
       </section>
 
-<!-- Verification Modal -->
+    <!-- Verification Modal -->
     <div id="verificationModal" class="verification-modal">
         <div class="verification-content">
             <h3>Business Verification</h3>
